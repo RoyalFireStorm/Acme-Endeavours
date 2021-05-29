@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (C) 2012-2021 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans 
+	xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>	
+	
+	
+
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/02/13 19:39"/>
+		<property name="author" value="John Doe"/>
+		<property name="text" value="I'm happy"/>
+		<property name="info"><null/></property>
+	</bean>
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2019/08/09 15:55"/>
+		<property name="author" value="Jonh Doe"/>
+		<property name="text" value="I'm the master of my room!"/>
+		<property name="info" value="http://www.example.org"/>
+	</bean>
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/07 00:00"/>
+		<property name="author" value="Foo Bar"/>
+		<property name="text" value="Just turning 50!"/>
+		<property name="info" value="https://conpdeparty.com/617-large_default/globo-foil-happy-birthday-rosa-oro.jpg"/>
+	</bean>
+	<bean id="shout04" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/06 00:00"/>
+		<property name="author" value="Michael Jackson"/>
+		<property name="text" value="Thriller!!"/>
+		<property name="info"> <null/></property>
+	</bean>
+		<bean id="shout05" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/11 09:02"/>
+		<property name="author" value="Mary Smith"/>
+		<property name="text" value="I'm very sad"/>
+		<property name="info"><null/></property>
+	</bean>
+		<bean id="shout06" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/20 23:36"/>
+		<property name="author" value="Lucy Long"/>
+		<property name="text" value="I have a new puppy!"/>
+		<property name="info" value="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F04%2F15%2FGettyImages-1035456488-2000.jpg"></property>
+	</bean>
+		<bean id="shout07" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/13 21:49"/>
+		<property name="author" value="Fredy Fast"/>
+		<property name="text" value="My car is red"/>
+		<property name="info"><null/></property>
+	</bean>
+		<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/23 19:34"/>
+		<property name="author" value="Mike Machine"/>
+		<property name="text" value="Everything has beauty but not everyone sees it"/>
+		<property name="info" value= "https://www.intentarlo.com/wp-content/uploads/2018/06/frases-en-ingl%C3%A9s.jpg"></property>
+	</bean>
+		<bean id="shout09" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/13 15:12"/>
+		<property name="author" value="Mike James"/>
+		<property name="text" value="I love my wife"/>
+		<property name="info"><null/></property>
+	</bean>
+		<bean id="shout10" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/06 21:15"/>
+		<property name="author" value="Donald Mcfly"/>
+		<property name="text" value="If you can dream it you can do it"/>
+		<property name="info" value="https://i.pinimg.com/originals/10/04/58/100458c1e22397fb55c081cc88232daa.jpg"></property>
+	</bean>
+	<!-- Tasks-->
+	<bean id="task01" class="acme.entities.tasks.Task">
+		<property name="title" value="Create the entity Task for level C"/>
+		<property name="startMoment" value="2021/04/19 00:00"/>
+		<property name="endMoment" value="2021/04/20 18:00"/>
+		<property name="description" value="The entity Task must include: a title, an execution period, a description,and an optional link."/>
+		<property name="workload" value="1.5"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+		<property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task02" class="acme.entities.tasks.Task">
+		<property name="title" value="List public tasks that are non-finished for level C"/>
+		<property name="startMoment" value="2021/04/20 18:30"/>
+		<property name="endMoment" value="2021/04/22 10:00"/>
+		<property name="description" value="List the public tasks that are non-finished (sorted by execution 
+		period or work-load). Show the details of any public tasks that are non-finished."/>
+		<property name="workload" value="2.5"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+		<property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task03" class="acme.entities.tasks.Task">
+		<property name="title" value="List public tasks finished for level C"/>
+		<property name="startMoment" value="2021/04/20 18:30"/>
+		<property name="endMoment" value="2021/04/22 10:00"/>
+		<property name="description" value="List the public tasks that are finished (sorted by execution period or workload)."/>
+		<property name="workload" value="2.5"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link"> <null/></property>
+		<property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task04" class="acme.entities.tasks.Task">
+		<property name="title" value="Show the details for level C"/>
+		<property name="startMoment" value="2021/04/19 00:00"/>
+		<property name="endMoment" value="2021/04/30 10:00"/>
+		<property name="description" value="An authenticated principal must be able to: Show the details of the public tasks that are finished"/>
+		<property name="workload" value="2.5"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link"> <null/></property>
+		<property name="manager" ref="administratorManager2"/>
+	</bean>
+	<bean id="task05" class="acme.entities.tasks.Task">
+		<property name="title" value="Create a dashboard for level C"/>
+		<property name="startMoment" value="2021/04/23 00:00"/>
+		<property name="endMoment" value="2021/04/30 17:00"/>
+		<property name="description" value="Information: num of task public/priv, num of finished/not finished task, etc"/>
+		<property name="workload" value="3.8"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+		<bean id="task06" class="acme.entities.tasks.Task">
+		<property name="title" value="Change the color of the header buttons"/>
+		<property name="startMoment" value= "2022/11/21 10:10"/>
+		<property name="endMoment" value="2023/04/30 17:00"/>
+		<property name="description" value="Change the color of the header buttons when selected to red"/>
+		<property name="workload" value="20.5"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
+    <property name="manager" ref="administratorManager2"/>
+	</bean>
+		<bean id="task07" class="acme.entities.tasks.Task">
+		<property name="title" value="Change the background color of the header menu"/>
+		<property name="startMoment" value= "2021/12/21 17:10"/>
+		<property name="endMoment" value="2021/12/30 17:58"/>
+		<property name="description" value="Change the background color of the header menu to light green"/>
+		<property name="workload" value="12.5"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+		<bean id="task08" class="acme.entities.tasks.Task">
+		<property name="title" value="Change the message of the Welcome page"/>
+		<property name="startMoment" value= "2020/11/21 10:10"/>
+		<property name="endMoment" value="2021/12/30 17:26"/>
+		<property name="description" value="Change the message of the Welcome page to an image of a monkey"/>
+		<property name="workload" value="22.5"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+		<bean id="task09" class="acme.entities.tasks.Task">
+		<property name="title" value="Create a technical report (in Spanish) that describes the history of the project"/>
+		<property name="startMoment" value= "2022/01/21 04:10"/>
+		<property name="endMoment" value="2022/03/30 17:26"/>
+		<property name="description" value="Create a technical report (in Spanish) that describes the history of the project after finishing with the previous tasks"/>
+		<property name="workload" value="32.13"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager2"/>
+	</bean>
+		<bean id="task10" class="acme.entities.tasks.Task">
+		<property name="title" value="Add delete support"/>
+		<property name="startMoment" value= "2020/01/21 04:10"/>
+		<property name="endMoment" value="2022/03/30 17:26"/>
+		<property name="description" value="Add delete support to all main domain objects "/>
+		<property name="workload" value="45.3"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task11" class="acme.entities.tasks.Task">
+		<property name="title" value="Change the overall style of the website"/>
+		<property name="startMoment" value= "2021/01/21 14:10"/>
+		<property name="endMoment" value="2021/11/30 17:46"/>
+		<property name="description" value="Change the overall style of the website, modifying the logos, fonts and colors of the pages. It should use brownish tones"/>
+		<property name="workload" value="85.4"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task12" class="acme.entities.tasks.Task">
+		<property name="title" value="Edit model.uxf and create Java class"/>
+		<property name="startMoment" value= "2021/03/11 14:10"/>
+		<property name="endMoment" value="2021/12/12 17:26"/>
+		<property name="description" value="Edit model.uxf and create Java class"/>
+		<property name="workload" value="15.5"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task13" class="acme.entities.tasks.Task">
+		<property name="title" value="Add your fav link"/>
+		<property name="startMoment" value= "2021/01/21 18:10"/>
+		<property name="endMoment" value="2021/12/11 16:46"/>
+		<property name="description" value="Add your favourite link to the menu. You must display an i18d message: Member's favourite link; and it must link your favourite web site."/>
+		<property name="workload" value="10.1"/>
+		<property name="status" value="PRIVATE"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+		<bean id="task14" class="acme.entities.tasks.Task">
+		<property name="title" value="Change the logo of the website"/>
+		<property name="startMoment" value= "2021/01/21 14:10"/>
+		<property name="endMoment" value="2021/12/30 10:46"/>
+		<property name="description" value="Change the logo of the website to your favourite photo"/>
+		<property name="workload" value="125.44"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+      <property name="manager" ref="administratorManager2"/>
+	</bean>
+	<bean id="task15" class="acme.entities.tasks.Task">
+		<property name="title" value="Add a new funcionallity"/>
+		<property name="startMoment" value= "2021/04/11 14:00"/>
+		<property name="endMoment" value="2021/06/11 10:16"/>
+		<property name="description" value="Add a new functionality that you consider important"/>
+		<property name="workload" value="15.5"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager2"/>
+	</bean>
+	<bean id="task16" class="acme.entities.tasks.Task">
+		<property name="title" value="Add your contact address"/>
+		<property name="startMoment" value= "2021/01/21 18:0"/>
+		<property name="endMoment" value="2021/12/11 21:00"/>
+		<property name="description" value="Add your contact address and delete your favourite link"/>
+		<property name="workload" value="46.6"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager2"/>
+	</bean>
+		<bean id="task17" class="acme.entities.tasks.Task">
+		<property name="title" value="Add a new link"/>
+		<property name="startMoment" value= "2020/01/21 18:10"/>
+		<property name="endMoment" value="2020/12/11 16:46"/>
+		<property name="description" value="Add a new link to the menu."/>
+		<property name="workload" value="11.1"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager2"/>
+	</bean>
+		<bean id="task18" class="acme.entities.tasks.Task">
+		<property name="title" value="Change the logo of the website to a puppy photo"/>
+		<property name="startMoment" value= "2019/01/21 14:00"/>
+		<property name="endMoment" value="2019/12/30 10:00"/>
+		<property name="description" value="Change the logo of the website to a puppy photo"/>
+		<property name="workload" value="125.44"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task19" class="acme.entities.tasks.Task">
+		<property name="title" value="Delete shout funcionallity"/>
+		<property name="startMoment" value= "2021/01/11 09:00"/>
+		<property name="endMoment" value="2021/02/11 12:00"/>
+		<property name="description" value="Delete shout funcionallity "/>
+		<property name="workload" value="24.0"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+    <property name="manager" ref="administratorManager"/>
+	</bean>
+	<bean id="task20" class="acme.entities.tasks.Task">
+		<property name="title" value="Populate Data Base"/>
+		<property name="startMoment" value= "2021/02/01 00:0"/>
+		<property name="endMoment" value="2021/02/28 00:00"/>
+		<property name="description" value="Populate Data Base with new information"/>
+		<property name="workload" value="62.6"/>
+		<property name="status" value="PUBLIC"/>
+		<property name="link"> <null/></property>
+		<property name="manager" ref="administratorManager2"/>
+	</bean>
+  	<!-- Spam-->
+	<bean name="spam1" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="hard core" />
+	</bean>
+	<bean name="spam2" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="sex" />
+	</bean>
+	<bean name="spam3" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="viagra" />
+	</bean>
+	<bean name="spam4" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="cialis" />
+	</bean>
+	<bean name="spam5" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="nigeria" />
+	</bean>
+		<bean name="spam6" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="you've won" />
+	</bean>
+	<bean name="spam7" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="million dollar" />
+	</bean>
+		<bean name="spam8" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="sexo" />
+	</bean>
+		<bean name="spam9" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="Has ganado" />
+	</bean>
+	<bean name="spam10" class="acme.entities.spam.Spam">
+		<property name="spamWords" value="millón de euros" />
+	</bean>
+	<bean name="threshold1" class="acme.entities.spam.Threshold">
+		<property name="number" value="10.0" />
+	</bean>
+	
+	
+	<bean name="managerUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager" />
+		<property name="password" value="manager" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="manager" />
+				<property name="surname" value="Manager" />
+				<property name="email" value="manager@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="administratorAdministrator" />
+				<ref bean="administratorAuthenticated" />
+				<ref bean="administratorManager" />
+			</list>
+		</property>
+	</bean>
+  
+  	<bean name="administratorAdministrator" class="acme.framework.entities.Administrator">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	<bean name="administratorAuthenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	<bean name="administratorManager" class="acme.entities.roles.Manager">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	<bean name="managerUserAccount2" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager2" />
+		<property name="password" value="manager2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="manager" />
+				<property name="surname" value="Manager" />
+				<property name="email" value="manager2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="administratorAdministrator2" />
+				<ref bean="administratorAuthenticated2" />
+				<ref bean="administratorManager2" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="administratorAdministrator2" class="acme.framework.entities.Administrator">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	<bean name="administratorAuthenticated2" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	<bean name="administratorManager2" class="acme.entities.roles.Manager">
+		<property name="userAccount" ref="managerUserAccount2" />
+	</bean>
+	
+	<bean name="consumerUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="consumer" />
+		<property name="password" value="consumer" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="consumer" />
+				<property name="surname" value="Consumer" />
+				<property name="email" value="consumer@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="consumerAdministrator" />
+				<ref bean="consumerAuthenticated" />
+				<ref bean="consumerConsumer" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="consumerAdministrator" class="acme.framework.entities.Administrator">
+		<property name="userAccount" ref="consumerUserAccount" />
+	</bean>
+	
+	<bean name="consumerAuthenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="consumerUserAccount" />
+	</bean>
+	
+	<bean name="consumerConsumer" class="acme.entities.roles.Consumer">
+		<property name="userAccount" ref="consumerUserAccount" />
+		<property name="company" value="ETSII"/>
+		<property name="sector" value="Educational"/>
+	</bean>
+	
+	<bean name="providerUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="provider" />
+		<property name="password" value="provider" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="provider" />
+				<property name="surname" value="Provider" />
+				<property name="email" value="provider@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="providerAdministrator" />
+				<ref bean="providerAuthenticated" />
+				<ref bean="providerProvider" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="providerAdministrator" class="acme.framework.entities.Administrator">
+		<property name="userAccount" ref="providerUserAccount" />
+	</bean>
+	
+	<bean name="providerAuthenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="providerUserAccount" />
+	</bean>
+	
+	
+	<bean name="providerProvider" class="acme.entities.roles.Provider">
+		<property name="userAccount" ref="providerUserAccount" />
+		<property name="company" value="ETSII"/>
+		<property name="sector" value="Educational"/>
+	</bean>
+  <bean name="authenticatedUserAccount" class="acme.framework.entities.UserAccount">
+        <property name="username" value="authenticated" />
+        <property name="password" value="authenticated" />
+        <property name="enabled" value="true" />
+        <property name="identity">
+            <bean class="acme.datatypes.UserIdentity">
+                <property name="name" value="authenticated" />
+                <property name="surname" value="authenticated" />
+                <property name="email" value="authenticated@acme.com" />
+            </bean>
+        </property>
+        <property name="roles">
+            <list>
+                <ref bean="authenticatedAuthenticated" />
+            </list>
+        </property>
+    </bean>
+    <bean name="authenticatedAuthenticated" class="acme.framework.entities.Authenticated">
+        <property name="userAccount" ref="authenticatedUserAccount" />
+    </bean>
+    
+    <bean name="authenticatedUserAccount2" class="acme.framework.entities.UserAccount">
+        <property name="username" value="authenticated2" />
+        <property name="password" value="authenticated2" />
+        <property name="enabled" value="true" />
+        <property name="identity">
+            <bean class="acme.datatypes.UserIdentity">
+                <property name="name" value="authenticated2" />
+                <property name="surname" value="authenticated2" />
+                <property name="email" value="authenticated2@acme.com" />
+            </bean>
+        </property>
+        <property name="roles">
+            <list>
+                <ref bean="authenticatedAuthenticated2" />
+            </list>
+        </property>
+    </bean>
+    <bean name="authenticatedAuthenticated2" class="acme.framework.entities.Authenticated">
+        <property name="userAccount" ref="authenticatedUserAccount2" />
+    </bean>
+</beans>

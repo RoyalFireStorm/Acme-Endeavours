@@ -1,0 +1,45 @@
+/*
+ * SignUpTest.java
+ *
+ * Copyright (C) 2012-2021 Rafael Corchuelo.
+ *
+ * In keeping with the traditional purpose of furthering education and research, it is
+ * the policy of the copyright owner to permit non-commercial use and redistribution of
+ * this software. It has been tested carefully, but it is not guaranteed for any particular
+ * purposes. The copyright owner does not offer any warranties or representations, nor do
+ * they accept any liabilities with respect to them.
+ */
+
+package acme.testing;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+
+public class SignUpTest extends AcmePlannerTest {
+
+	// Lifecycle management ---------------------------------------------------
+
+	// Test cases -------------------------------------------------------------
+
+	//en este test probaremos el sign up de manera positiva, se espera que todos los registros se hagan correctamente
+	@ParameterizedTest 
+	@CsvFileSource(resources = "/sign-up/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(10)
+	public void positiveSignUp(final String username, final String password, final String name, final String surname, final String email) {
+		super.signUp(username, password, name, surname, email);
+		super.signIn(username, password);
+		super.signOut();
+	}
+	
+	//en este test probaremos el sign up de manera negativa, se espera que todos los registros tengan errores en el formulario y salten por pantalla
+	@ParameterizedTest
+	@CsvFileSource(resources = "/sign-up/negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void negativeSignUp(final String username, final String password, final String name, final String surname, final String email) {
+		super.signUpNegative(username, password, name, surname, email);
+	}
+
+	// Ancillary methods ------------------------------------------------------
+	
+}

@@ -1,0 +1,9 @@
+title,startMoment,endMoment,workload,status,description,link
+,30/02/2022 00:00,30/02/2023 00:00,100,PUBLIC,Esto es un ejemplo,https://www.google.com/
+fechas erroneas,30/02/2012 00:00,30/02/2023 00:00,100,PUBLIC,Esto es un ejemplo,https://www.google.com/
+fechas erroneas,30/02/2012 00:00,30/02/2013 00:00,100,PUBLIC,Esto es un ejemplo,https://www.google.com/
+fechas erroneas,30/02/2022 00:00,30/02/2013 00:00,100,PUBLIC,Esto es un ejemplo,https://www.google.com/
+workload erroneo,20/12/2021 00:00,21/12/2021 00:00,10088,PUBLIC,Esto es un ejemplo,https://www.google.com/
+descripcion erronea,30/02/2022 00:00,30/02/2023 00:00,100,PUBLIC,,https://www.google.com/
+contiene spam,30/02/2022 00:00,30/02/2023 00:00,100,PRIVATE,sex,sex
+workload erroneo,20/12/2021 00:00,21/12/2021 00:00,-22222222222,PUBLIC,Esto es un ejemplo,https://www.google.com/

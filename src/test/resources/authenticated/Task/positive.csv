@@ -1,0 +1,7 @@
+recordIndex,title,start_moment,end_moment,description,workload,status,link,id,version,manager_id
+0,Change the logo of the website to a puppy photo,2019/01/21 14:00,2019/12/30 10:00,Change the logo of the website to a puppy photo,125.44,PUBLIC,,272,0,250
+1,Add a new link,2020/01/21 18:10,2020/12/11 16:46,Add a new link to the menu.,11.10,PUBLIC,,271,0,254
+2,Delete shout funcionallity,2021/01/11 09:00,2021/02/11 12:00,Delete shout funcionallity,24.00,PUBLIC,,273,0,250
+3,Populate Data Base,2021/02/01 00:00,2021/02/28 00:00,Populate Data Base with new information,62.60,PUBLIC,,274,0,254
+4,Create the entity Task for level C,2021/04/19 00:00,2021/04/20 18:00,"The entity Task must include: a title, an execution period, a description,and an optional link.",1.50,PUBLIC,,255,0,250
+5,List public tasks that are non-finished for level C,2021/04/20 18:30,2021/04/22 10:00,List the public tasks that are non-finished (sorted by execution    period or work-load). Show the details of any public tasks that are non-finished.,2.50,PUBLIC,,256,0,250

@@ -1,0 +1,8 @@
+recordIndex,title,startMoment,endMoment,workload,status,description,link
+0,Add delete support,2020/01/21 04:10,2022/03/30 17:26,45.30,PUBLIC,Add delete support to all main domain objects,
+1,Change the overall style of the website,2021/01/21 14:10,2021/11/30 17:46,85.40,PUBLIC,"Change the overall style of the website, modifying the logos, fonts and colors of the pages. It should use brownish tones",
+2,Change the logo of the website,2021/01/21 14:10,2021/12/30 10:46,125.44,PUBLIC,Change the logo of the website to your favourite photo,,,
+3,Add your contact address,2021/01/21 18:00,2021/12/11 21:00,46.60,PUBLIC,Add your contact address and delete your favourite link,,,
+4,Add a new funcionallity,2021/04/11 14:00,2021/06/11 10:16,15.50,PUBLIC,Add a new functionality that you consider important,,,
+5,Change the background color of the header menu,2021/12/21 17:10,2021/12/30 17:58,12.50,PUBLIC,Change the background color of the header menu to light green,https://github.com/Servandofg12/DP2-June13/projects/1,,
+6,Create a technical report (in Spanish) that describes the history of the project,2022/01/21 04:10,2022/03/30 17:26,32.13,PUBLIC,Create a technical report (in Spanish) that describes the history of the project after finishing with the previous tasks,,,

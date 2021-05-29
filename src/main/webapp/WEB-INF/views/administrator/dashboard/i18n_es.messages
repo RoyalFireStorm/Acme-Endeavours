@@ -1,0 +1,19 @@
+administrator.dashboard.form.title.show = Panel de indicadores
+
+administrator.dashboard.form.title.general-indicators = Indicadores generales
+administrator.dashboard.form.label.total-number-task-public =  Número total de tareas públicas
+administrator.dashboard.form.label.total-number-task-private =  Número total de tareas privadas
+administrator.dashboard.form.label.total-number-task-no-finished =  Número total de tareas no finalizadas
+administrator.dashboard.form.label.total-number-task-finished =  Número total de tareas finalizadas
+
+administrator.dashboard.form.title.workload-statistics = Estadísticas de carga de trabajo
+administrator.dashboard.form.label.average-task-workload =  Media de carga de trabajo
+administrator.dashboard.form.label.deviation-task-workload =  Desviación de carga de trabajo
+administrator.dashboard.form.label.minimum-task-workload =  Mínimo de carga de trabajo
+administrator.dashboard.form.label.maximum-task-workload =  Máximo de carga de trabajo
+
+administrator.dashboard.form.title.execution-period-statistics = Estadísticas de tiempo de ejecución
+administrator.dashboard.form.label.average-task-execution-period =  Media de tiempo de ejecución
+administrator.dashboard.form.label.deviation-task-execution-period =  Desviación de tiempo de ejecución
+administrator.dashboard.form.label.minimum-task-execution-period =  Mínimo de tiempo de ejecución
+administrator.dashboard.form.label.maximum-task-execution-period =  Máximo de tiempo de ejecución
