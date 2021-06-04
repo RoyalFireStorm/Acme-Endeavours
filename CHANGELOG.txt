@@ -15,6 +15,7 @@ Year 2021
 21.3   Fixed some bugs that prevented the populator from working well when deployed to Clever Cloud.
 21.4   The testing framework has been greatly simplified and enhanced.
 21.5   Minor corrections and improvements to the testing framework, which now supports performance testing.
+21.6   Minor corrections to the performance testing framework.
 
 Year 2020
 
