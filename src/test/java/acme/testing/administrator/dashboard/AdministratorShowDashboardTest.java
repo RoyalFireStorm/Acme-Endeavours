@@ -13,8 +13,8 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorShowDashboardTest extends AcmePlannerTest{
 
-	
-	
+	//Test del dashboard positivo, se espera
+	//que los datos introducidos en el csv correspondan con los que muestra el dashboard en la página	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard/positive.csv", encoding="utf-8", numLinesToSkip=1)
 	@Order(12)
@@ -35,6 +35,8 @@ public class AdministratorShowDashboardTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
+	//Test del dashboard negativo, se espera
+	//que un manager no pueda acceder al dashboard
 	@Test
 	@Order(13)
 	public void dashboardNegative() {
