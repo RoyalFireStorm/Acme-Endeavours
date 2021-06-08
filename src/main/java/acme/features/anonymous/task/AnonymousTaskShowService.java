@@ -1,9 +1,12 @@
 package acme.features.anonymous.task;
 
+import java.util.Calendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.tasks.Task;
+import acme.entities.tasks.TaskStatus;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
@@ -21,8 +24,14 @@ public class AnonymousTaskShowService implements AbstractShowService<Anonymous, 
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
+		assert request !=null;
+		Task task;
+        int taskId;
+        taskId = request.getModel().getInteger("id");
+        task = this.repository.findOneTaskById(taskId);
 
-		return true;
+        if(task.getStatus().equals(TaskStatus.PRIVATE) || task.getEndMoment().before(Calendar.getInstance().getTime())) return false;
+        return true;
 	}
 	
 	@Override
