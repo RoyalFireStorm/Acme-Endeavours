@@ -1,5 +1,6 @@
 package acme.features.manager.task;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
@@ -114,16 +115,29 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		}
 		//Validacion workload
 		final Double workload = entity.getWorkload();
-		Boolean workloadCorrecto;
+		final BigDecimal bd = new BigDecimal(String.valueOf(workload));
+		final BigDecimal fPart = bd.remainder(BigDecimal.ONE);
+		final BigDecimal minutosMax = new BigDecimal(String.valueOf(0.59));
+		final Integer workloadInt = workload.intValue();
+		//final Integer workloadDouble = (int) (workload%1.*100);
+		final Boolean workloadCorrecto;
 		if(workload == null || endMoment == null || startMoment == null) {
 			
 		}else if(workload <= 0.0){
 			errors.state(request, false, "workload","manager.task.error.workloadNegative");
-		}else {
+	} 
+			else if(workload > 99.59) {
+			errors.state(request, false, "workload","manager.task.error.workloadMax");
+	} else if(fPart.compareTo(minutosMax) == 1) {
+		errors.state(request, false, "workload","manager.task.error.workloadMaxMinutes");
+	} else if(workloadInt > 99) {
+		errors.state(request, false, "workload","manager.task.error.workloadMaxHours");
+	}
+		else{ 
 			final Double workloadMaxInDays = (double)(endMoment.getTime()-startMoment.getTime())/86400000;
 			final Double workloadMaxInHours = workloadMaxInDays*24;
-			workloadCorrecto = workload <= workloadMaxInHours && workload > 0.;
-			errors.state(request, workloadCorrecto, "workload","manager.task.error.workload");
+		workloadCorrecto = workload <= workloadMaxInHours && workload > 0.;
+		errors.state(request, workloadCorrecto, "workload","manager.task.error.workload");
 		}
 	}
 

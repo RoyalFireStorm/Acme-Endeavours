@@ -16,7 +16,7 @@ master.banner.background = #5CE1E6
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	Bienvenidos a Acme Planner! Tu segundo proyecto en DP
+	Bienvenidos a Acme Work-Plans! Tu segundo proyecto en DP
 
 # master.menu #################################################################
 
@@ -30,11 +30,8 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.favourite-link-alvaro = Enlace favorito de Sánchez
-master.menu.anonymous.favourite-link-lucia = Enlace favorito de Torres
 master.menu.anonymous.favourite-link-jesus = Enlace favorito de Roldan
 master.menu.anonymous.favourite-link-raul = Enlace favorito de Parrado
-master.menu.anonymous.favourite-link-servando = Enlace favorito de Figueroa
-master.menu.anonymous.favourite-link-maria = Enlace favorito de García
 master.menu.anonymous.listShout = Listado de Gritos
 master.menu.anonymous.createShout = Gritar!
 master.menu.anonymous.listTask = Listado de Tareas

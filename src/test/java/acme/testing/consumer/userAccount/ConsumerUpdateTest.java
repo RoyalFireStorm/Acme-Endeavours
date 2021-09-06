@@ -4,9 +4,9 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.springframework.core.annotation.Order;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ConsumerUpdateTest extends AcmePlannerTest{
+public class ConsumerUpdateTest extends AcmeWorkPlansTest{
 		
 	//Test de update consumer, se espera que un consumer pueda actualizar sus datos
 		@ParameterizedTest

@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ManagerTaskUpdateTest   extends AcmePlannerTest  {
+public class ManagerTaskUpdateTest   extends AcmeWorkPlansTest  {
 
 	//Test de la actualización de una task de un Manager (positivo). Introducimos valores correctos para cada campo del formulario y actualizamos la task.
 	@ParameterizedTest

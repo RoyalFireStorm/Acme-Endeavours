@@ -2,9 +2,9 @@ package acme.testing.manager.userAccount;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ManagerCreateTest extends AcmePlannerTest{
+public class ManagerCreateTest extends AcmeWorkPlansTest{
 	// Lifecycle management ---------------------------------------------------
 	
 			// Test cases -------------------------------------------------------------

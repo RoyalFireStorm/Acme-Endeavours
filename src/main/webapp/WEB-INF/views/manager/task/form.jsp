@@ -8,7 +8,7 @@
 	<acme:form-textbox code="manager.task.form.label.title" path="title"/>	
 	<acme:form-moment code="manager.task.form.label.startMoment" path="startMoment"/>
 	<acme:form-moment code="manager.task.form.label.endMoment" path="endMoment"/>
-	<acme:form-money code="manager.task.form.label.workload" path="workload"/>
+	<acme:form-textbox code="manager.task.form.label.workload" path="workload"/>
 	<acme:form-select code="manager.task.form.label.status" path="status">
 		<acme:form-option code="PUBLIC" value="PUBLIC" selected="${status == 'PUBLIC'}"/>
 		<acme:form-option code="PRIVATE" value="PRIVATE" selected="${status == 'PRIVATE'}"/>

@@ -1,5 +1,5 @@
 recordIndex,title,startMoment,endMoment,workload,status,description,link
-0,actualizado-Change the logo of the website to a puppy photo,2023/01/21 14:00,2023/12/30 10:00,125.44,PUBLIC,Change the logo of the website to a puppy photo,
+0,actualizado-Change the logo of the website to a puppy photo,2023/01/21 14:00,2023/12/30 10:00,25.44,PUBLIC,Change the logo of the website to a puppy photo,
 1,actualizado-Add delete support,2026/01/21 04:10,2026/03/30 18:26,45.30,PUBLIC,Add delete support to all main domain objects,
 2,actualizado-Change the message of the Welcome page,2026/10/21 10:10,2027/12/30 17:26,22.50,PUBLIC,Change the message of the Welcome page to an image of a monkey,https://github.com/Servandofg12/DP2-June13/projects/1
 3,actualizado-Delete shout funcionallity,2027/01/11 09:00,2027/02/11 12:00,24.00,PRIVATE,Delete shout funcionallity,
@@ -9,5 +9,5 @@ recordIndex,title,startMoment,endMoment,workload,status,description,link
 7,actualizado-Create the entity Task for level C,2027/04/19 00:00,2027/04/20 18:00,1.50,PUBLIC,"The entity Task must include: a title, an execution period, a description,and an optional link.",
 8,actualizado-List public tasks that are non-finished for level C,2027/04/20 18:30,2027/04/22 10:00,2.50,PRIVATE,List the public tasks that are non-finished (sorted by execution    period or work-load). Show the details of any public tasks that are non-finished.,
 9,actualizado-List public tasks finished for level C,2027/04/20 18:30,2027/04/22 10:00,2.50,PRIVATE,List the public tasks that are finished (sorted by execution period or workload).,
-10,actualizado-Create a dashboard for level C,2027/04/23 00:00,2027/04/30 17:00,3.80,PUBLIC,"Information: num of task public/priv, num of finished/not finished task, etc",https://github.com/Servandofg12/DP2-June13/projects/1
+10,actualizado-Create a dashboard for level C,2021/11/23 00:00,2021/11/30 17:00,23.10,PUBLIC,"Information: num of task public/priv, num of finished/not finished task, etc",https://github.com/Servandofg12/DP2-June13/projects/1
 11,actualizado-Change the background color of the header menu,2027/12/21 17:10,2027/12/30 17:58,12.50,PUBLIC,Change the background color of the header menu to light green,https://github.com/Servandofg12/DP2-June13/projects/1

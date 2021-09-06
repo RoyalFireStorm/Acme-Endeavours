@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ManagerTaskListMineTest  extends AcmePlannerTest {
+public class ManagerTaskListMineTest  extends AcmeWorkPlansTest {
 	
 	//Test de la lista de tasks de un Manager. Se espera que cada columna tenga el valor asignado en /listTask/positive.csv
 	@ParameterizedTest
