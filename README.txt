@@ -12,3 +12,8 @@ This is the Starter Project, which is intended to be a core learning asset for t
 who have enroled the Design and Testing subject of the Software Engineering curriculum of the 
 University of Sevilla.  This project helps them start working on their new information system 
 projects.
+
+Enlace al repositorio de GitHub: https://github.com/RoyalFireStorm/Acme-Work-Plans
+
+Enlace a la release: https://github.com/RoyalFireStorm/Acme-Work-Plans/releases/tag/1.2
+
