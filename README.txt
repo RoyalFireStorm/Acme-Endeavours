@@ -15,5 +15,5 @@ projects.
 
 Enlace al repositorio de GitHub: https://github.com/RoyalFireStorm/Acme-Work-Plans
 
-Enlace a la release: https://github.com/RoyalFireStorm/Acme-Work-Plans/releases/tag/1.2
+Enlace a la release: https://github.com/RoyalFireStorm/Acme-Work-Plans/releases/tag/1.3
 
