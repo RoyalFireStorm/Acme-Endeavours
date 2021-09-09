@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
+      <x>444</x>
       <y>144</y>
       <w>144</w>
       <h>36</h>
@@ -18,7 +18,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
+      <x>408</x>
       <y>144</y>
       <w>48</w>
       <h>36</h>
@@ -29,7 +29,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>150</x>
+      <x>144</x>
       <y>84</y>
       <w>132</w>
       <h>72</h>
@@ -49,7 +49,7 @@ bg=orange
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>138</x>
+      <x>132</x>
       <y>30</y>
       <w>144</w>
       <h>36</h>
@@ -62,7 +62,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
+      <x>192</x>
       <y>60</y>
       <w>24</w>
       <h>36</h>
@@ -74,7 +74,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
+      <x>408</x>
       <y>174</y>
       <w>54</w>
       <h>54</h>
@@ -85,7 +85,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
+      <x>654</x>
       <y>150</y>
       <w>60</w>
       <h>36</h>
@@ -100,7 +100,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
+      <x>654</x>
       <y>102</y>
       <w>60</w>
       <h>36</h>
@@ -115,7 +115,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
+      <x>654</x>
       <y>192</y>
       <w>60</w>
       <h>36</h>
@@ -130,7 +130,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
+      <x>582</x>
       <y>126</y>
       <w>84</w>
       <h>48</h>
@@ -141,7 +141,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
+      <x>582</x>
       <y>156</y>
       <w>84</w>
       <h>18</h>
@@ -152,7 +152,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
+      <x>582</x>
       <y>156</y>
       <w>84</w>
       <h>54</h>
@@ -163,7 +163,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>150</x>
+      <x>144</x>
       <y>168</y>
       <w>132</w>
       <h>42</h>
@@ -179,7 +179,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>300</x>
+      <x>294</x>
       <y>126</y>
       <w>120</w>
       <h>54</h>
@@ -194,7 +194,7 @@ Provider
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>294</x>
+      <x>288</x>
       <y>192</y>
       <w>126</w>
       <h>48</h>
@@ -209,7 +209,7 @@ Consumer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
+      <x>0</x>
       <y>84</y>
       <w>132</w>
       <h>48</h>
@@ -226,7 +226,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
+      <x>0</x>
       <y>144</y>
       <w>132</w>
       <h>78</h>
@@ -246,7 +246,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
+      <x>0</x>
       <y>234</y>
       <w>132</w>
       <h>54</h>
@@ -263,7 +263,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>414</x>
+      <x>408</x>
       <y>0</y>
       <w>204</w>
       <h>78</h>
@@ -285,7 +285,7 @@ UserAccount
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>516</x>
+      <x>510</x>
       <y>72</y>
       <w>42</w>
       <h>84</h>
@@ -299,7 +299,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>492</x>
+      <x>486</x>
       <y>270</y>
       <w>234</w>
       <h>78</h>
@@ -318,7 +318,7 @@ Shout
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>234</x>
+      <x>228</x>
       <y>390</y>
       <w>240</w>
       <h>96</h>
@@ -338,7 +338,7 @@ Task
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>294</x>
+      <x>288</x>
       <y>258</y>
       <w>126</w>
       <h>48</h>
@@ -352,7 +352,7 @@ Manager
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>348</x>
+      <x>342</x>
       <y>300</y>
       <w>42</w>
       <h>102</h>
@@ -366,7 +366,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>96</x>
+      <x>90</x>
       <y>408</y>
       <w>126</w>
       <h>48</h>
@@ -381,7 +381,7 @@ TaskStatus
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
+      <x>366</x>
       <y>174</y>
       <w>120</w>
       <h>96</h>
@@ -392,7 +392,7 @@ TaskStatus
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>732</x>
+      <x>726</x>
       <y>270</y>
       <w>138</w>
       <h>48</h>
@@ -407,7 +407,7 @@ Spam
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>732</x>
+      <x>726</x>
       <y>324</y>
       <w>138</w>
       <h>48</h>
@@ -422,7 +422,7 @@ Threshold
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>228</x>
+      <x>222</x>
       <y>522</y>
       <w>84</w>
       <h>54</h>
@@ -438,7 +438,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>570</x>
+      <x>564</x>
       <y>378</y>
       <w>84</w>
       <h>48</h>
@@ -451,7 +451,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
+      <x>336</x>
       <y>480</y>
       <w>18</w>
       <h>60</h>
@@ -463,7 +463,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>318</x>
+      <x>312</x>
       <y>528</y>
       <w>84</w>
       <h>48</h>
@@ -477,21 +477,25 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>414</x>
+      <x>408</x>
       <y>528</y>
-      <w>84</w>
-      <h>48</h>
+      <w>102</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>Workload must fit in 
 executionPeriod and 
-it must be &gt;0
+it must be &gt;0. The
+maximum number of 
+hours is 99 and the 
+maximum number of 
+minutes is 59.
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>594</x>
       <y>342</y>
       <w>18</w>
       <h>48</h>
@@ -503,7 +507,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
+      <x>246</x>
       <y>480</y>
       <w>18</w>
       <h>54</h>
@@ -515,7 +519,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>444</x>
+      <x>438</x>
       <y>480</y>
       <w>18</w>
       <h>60</h>
