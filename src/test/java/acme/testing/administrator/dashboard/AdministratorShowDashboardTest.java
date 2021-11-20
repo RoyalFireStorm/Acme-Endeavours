@@ -36,12 +36,12 @@ public class AdministratorShowDashboardTest extends AcmeWorkPlansTest{
 	}
 	
 	//Test del dashboard negativo, se espera
-	//que un manager no pueda acceder al dashboard
+	//que un officer no pueda acceder al dashboard
 	@Test
 	@Order(13)
 	public void dashboardNegative() {
 		
-		super.signIn("manager", "manager");
+		super.signIn("officer", "officer");
 		
 		super.navigate("/administrator/dashboard", "show");
 		

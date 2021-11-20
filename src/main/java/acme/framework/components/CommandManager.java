@@ -1,5 +1,5 @@
 /*
- * CommandManager.java
+ * CommandOfficer.java
  *
  * Copyright (C) 2012-2021 Rafael Corchuelo.
  *
@@ -88,7 +88,7 @@ public class CommandManager<R extends UserRole, E> {
 		BasicCommand value;
 
 		result = new ArrayList<Command>();
-		for (Entry<Command, BasicCommand> entry : this.typeMap.entrySet()) {
+		for (final Entry<Command, BasicCommand> entry : this.typeMap.entrySet()) {
 			key = entry.getKey();
 			value = entry.getValue();
 			if (value.equals(basicCommand)) {

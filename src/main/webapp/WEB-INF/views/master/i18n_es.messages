@@ -56,13 +56,13 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
-# master.menu.manager ##########################################################
+# master.menu.officer ##########################################################
 
-master.menu.manager = Manager
-master.menu.manager.createTask = Crear tarea
-master.menu.manager.listTask = Lista de tareas
-master.menu.manager.favourite-link = Enlace favorito
-master.menu.manager.showTask = Mostrar tarea
+master.menu.officer = Officer
+master.menu.officer.createTask = Crear tarea
+master.menu.officer.listTask = Lista de tareas
+master.menu.officer.favourite-link = Enlace favorito
+master.menu.officer.showTask = Mostrar tarea
 
 # master.menu.user-account ####################################################
 
@@ -72,8 +72,8 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-master.menu.user-account.become-manager = Hazte manager
-master.menu.user-account.manager = Datos de manager
+master.menu.user-account.become-officer = Hazte officer
+master.menu.user-account.officer = Datos de officer
 
 
 

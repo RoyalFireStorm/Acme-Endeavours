@@ -90,7 +90,7 @@
 		<property name="workload" value="1.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-		<property name="manager" ref="administratorManager"/>
+		<property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty02" class="acme.entities.duties.Duty">
 		<property name="title" value="List public duties that are non-finished for level C"/>
@@ -101,7 +101,7 @@
 		<property name="workload" value="2.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-		<property name="manager" ref="administratorManager"/>
+		<property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty03" class="acme.entities.duties.Duty">
 		<property name="title" value="List public duties finished for level C"/>
@@ -111,7 +111,7 @@
 		<property name="workload" value="2.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link"> <null/></property>
-		<property name="manager" ref="administratorManager"/>
+		<property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty04" class="acme.entities.duties.Duty">
 		<property name="title" value="Show the details for level C"/>
@@ -121,7 +121,7 @@
 		<property name="workload" value="2.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link"> <null/></property>
-		<property name="manager" ref="administratorManager2"/>
+		<property name="officer" ref="administratorOfficer2"/>
 	</bean>
 	<bean id="duty05" class="acme.entities.duties.Duty">
 		<property name="title" value="Create a dashboard for level C"/>
@@ -131,7 +131,7 @@
 		<property name="workload" value="3.8"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 		<bean id="duty06" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the color of the header buttons"/>
@@ -141,7 +141,7 @@
 		<property name="workload" value="20.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
-    <property name="manager" ref="administratorManager2"/>
+    <property name="officer" ref="administratorOfficer2"/>
 	</bean>
 		<bean id="duty07" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the background color of the header menu"/>
@@ -151,7 +151,7 @@
 		<property name="workload" value="12.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 		<bean id="duty08" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the message of the Welcome page"/>
@@ -161,7 +161,7 @@
 		<property name="workload" value="22.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 		<bean id="duty09" class="acme.entities.duties.Duty">
 		<property name="title" value="Create a technical report (in Spanish) that describes the history of the project"/>
@@ -171,7 +171,7 @@
 		<property name="workload" value="32.13"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager2"/>
+    <property name="officer" ref="administratorOfficer2"/>
 	</bean>
 		<bean id="duty10" class="acme.entities.duties.Duty">
 		<property name="title" value="Add delete support"/>
@@ -181,7 +181,7 @@
 		<property name="workload" value="45.3"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty11" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the overall style of the website"/>
@@ -191,7 +191,7 @@
 		<property name="workload" value="85.4"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty12" class="acme.entities.duties.Duty">
 		<property name="title" value="Edit model.uxf and create Java class"/>
@@ -201,7 +201,7 @@
 		<property name="workload" value="15.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty13" class="acme.entities.duties.Duty">
 		<property name="title" value="Add your fav link"/>
@@ -211,7 +211,7 @@
 		<property name="workload" value="10.1"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 		<bean id="duty14" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the logo of the website"/>
@@ -221,7 +221,7 @@
 		<property name="workload" value="25.44"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-      <property name="manager" ref="administratorManager2"/>
+      <property name="officer" ref="administratorOfficer2"/>
 	</bean>
 	<bean id="duty15" class="acme.entities.duties.Duty">
 		<property name="title" value="Add a new funcionallity"/>
@@ -231,7 +231,7 @@
 		<property name="workload" value="15.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager2"/>
+    <property name="officer" ref="administratorOfficer2"/>
 	</bean>
 	<bean id="duty16" class="acme.entities.duties.Duty">
 		<property name="title" value="Add your contact address"/>
@@ -241,7 +241,7 @@
 		<property name="workload" value="46.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager2"/>
+    <property name="officer" ref="administratorOfficer2"/>
 	</bean>
 		<bean id="duty17" class="acme.entities.duties.Duty">
 		<property name="title" value="Add a new link"/>
@@ -251,7 +251,7 @@
 		<property name="workload" value="11.1"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager2"/>
+    <property name="officer" ref="administratorOfficer2"/>
 	</bean>
 		<bean id="duty18" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the logo of the website to a puppy photo"/>
@@ -261,7 +261,7 @@
 		<property name="workload" value="25.44"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty19" class="acme.entities.duties.Duty">
 		<property name="title" value="Delete shout funcionallity"/>
@@ -271,7 +271,7 @@
 		<property name="workload" value="24.0"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-    <property name="manager" ref="administratorManager"/>
+    <property name="officer" ref="administratorOfficer"/>
 	</bean>
 	<bean id="duty20" class="acme.entities.duties.Duty">
 		<property name="title" value="Populate Data Base"/>
@@ -281,7 +281,7 @@
 		<property name="workload" value="62.3"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
-		<property name="manager" ref="administratorManager2"/>
+		<property name="officer" ref="administratorOfficer2"/>
 	</bean>
   	<!-- Spam-->
 	<bean name="spam1" class="acme.entities.spam.Spam">
@@ -319,68 +319,68 @@
 	</bean>
 	
 	
-	<bean name="managerUserAccount" class="acme.framework.entities.UserAccount">
-		<property name="username" value="manager" />
-		<property name="password" value="manager" />
+	<bean name="officerUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="officer" />
+		<property name="password" value="officer" />
 		<property name="enabled" value="true" />
 		<property name="identity">
 			<bean class="acme.datatypes.UserIdentity">
-				<property name="name" value="manager" />
-				<property name="surname" value="Manager" />
-				<property name="email" value="manager@acme.com" />
+				<property name="name" value="officer" />
+				<property name="surname" value="Officer" />
+				<property name="email" value="officer@acme.com" />
 			</bean>
 		</property>
 		<property name="roles">
 			<list>
 				<ref bean="administratorAdministrator" />
 				<ref bean="administratorAuthenticated" />
-				<ref bean="administratorManager" />
+				<ref bean="administratorOfficer" />
 			</list>
 		</property>
 	</bean>
   
   	<bean name="administratorAdministrator" class="acme.framework.entities.Administrator">
-		<property name="userAccount" ref="managerUserAccount" />
+		<property name="userAccount" ref="officerUserAccount" />
 	</bean>
 	
 	<bean name="administratorAuthenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="managerUserAccount" />
+		<property name="userAccount" ref="officerUserAccount" />
 	</bean>
 	
-	<bean name="administratorManager" class="acme.entities.roles.Manager">
-		<property name="userAccount" ref="managerUserAccount" />
+	<bean name="administratorOfficer" class="acme.entities.roles.Officer">
+		<property name="userAccount" ref="officerUserAccount" />
 	</bean>
 	
-	<bean name="managerUserAccount2" class="acme.framework.entities.UserAccount">
-		<property name="username" value="manager2" />
-		<property name="password" value="manager2" />
+	<bean name="officerUserAccount2" class="acme.framework.entities.UserAccount">
+		<property name="username" value="officer2" />
+		<property name="password" value="officer2" />
 		<property name="enabled" value="true" />
 		<property name="identity">
 			<bean class="acme.datatypes.UserIdentity">
-				<property name="name" value="manager" />
-				<property name="surname" value="Manager" />
-				<property name="email" value="manager2@acme.com" />
+				<property name="name" value="officer" />
+				<property name="surname" value="Officer" />
+				<property name="email" value="officer2@acme.com" />
 			</bean>
 		</property>
 		<property name="roles">
 			<list>
 				<ref bean="administratorAdministrator2" />
 				<ref bean="administratorAuthenticated2" />
-				<ref bean="administratorManager2" />
+				<ref bean="administratorOfficer2" />
 			</list>
 		</property>
 	</bean>
 	
 	<bean name="administratorAdministrator2" class="acme.framework.entities.Administrator">
-		<property name="userAccount" ref="managerUserAccount" />
+		<property name="userAccount" ref="officerUserAccount" />
 	</bean>
 	
 	<bean name="administratorAuthenticated2" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="managerUserAccount" />
+		<property name="userAccount" ref="officerUserAccount" />
 	</bean>
 	
-	<bean name="administratorManager2" class="acme.entities.roles.Manager">
-		<property name="userAccount" ref="managerUserAccount2" />
+	<bean name="administratorOfficer2" class="acme.entities.roles.Officer">
+		<property name="userAccount" ref="officerUserAccount2" />
 	</bean>
 	
 	<bean name="consumerUserAccount" class="acme.framework.entities.UserAccount">

@@ -1,7 +1,7 @@
 recordIndex,username,identity.name,identity.surname,identity.email,rolelist,status,newStatus
 0,anonymous,John,Doe,john.doe@acme.com,Anonymous,DISABLED,
 1,administrator,Administrator,Acme.com,administrator@acme.com,Administrator Authenticated,ENABLED,
-2,manager,manager,Manager,manager@acme.com,Manager Administrator Administrator Authenticated Authenticated,ENABLED,
-3,manager2,manager,Manager,manager2@acme.com,Manager,ENABLED, KEEP
+2,officer,officer,Officer,officer@acme.com,Officer Administrator Administrator Authenticated Authenticated,ENABLED,
+3,officer2,officer,Officer,officer2@acme.com,Officer,ENABLED, KEEP
 
 

@@ -1,0 +1,38 @@
+# i18n_en.messages
+#
+# Copyright (c) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+officer.duty.list.label.title = Title
+officer.duty.list.label.startMoment = Start Moment
+officer.duty.list.label.endMoment = End Moment
+officer.duty.list.label.workload = Workload
+officer.duty.list.label.status = Status
+officer.duty.list.label.description = Description
+officer.duty.list.label.link = Link
+
+officer.duty.form.label.title = Title
+officer.duty.form.label.startMoment = Start Moment
+officer.duty.form.label.endMoment = End Moment
+officer.duty.form.label.workload = Workload
+officer.duty.form.label.status = Status
+officer.duty.form.label.description = Description
+officer.duty.form.label.link = Link
+officer.duty.form.button.create = Create Duty
+officer.duty.form.button.return = Return
+officer.duty.form.button.update = Update Duty
+officer.duty.form.button.delete = Delete Duty
+
+officer.duty.error.spam = Contains spam
+officer.duty.error.startMoment = Start Moment must be in future and fit yyyy/mm/dd hh:mm
+officer.duty.error.endMoment = End Moment must be after start moment and fit yyyy/mm/dd hh:mm
+officer.duty.error.workload = Workload must be a number and it must fit within the execution period
+officer.duty.error.workloadMax = Workload can't be higher than 99.59
+officer.duty.error.workloadMaxMinutes = The maximum number of minutes is 59
+officer.duty.error.workloadMaxHours = The maximum number of hours is 99
+officer.duty.error.workloadNegative = Workload must be positive and higher than 0.0

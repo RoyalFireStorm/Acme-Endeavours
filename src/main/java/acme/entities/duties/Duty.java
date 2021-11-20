@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.roles.Manager;
+import acme.entities.roles.Officer;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -56,11 +56,11 @@ public class Duty extends DomainEntity{
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
-	protected Manager manager;
+	protected Officer officer;
 
 	@Override
 	public String toString() {
-		return "Duty [title=" + this.title + ", startMoment=" + this.startMoment + ", endMoment=" + this.endMoment + ", description=" + this.description + ", workload=" + this.workload + ", link=" + this.link + ", status=" + this.status + ", manager=" + this.manager + "]";
+		return "Duty [title=" + this.title + ", startMoment=" + this.startMoment + ", endMoment=" + this.endMoment + ", description=" + this.description + ", workload=" + this.workload + ", link=" + this.link + ", status=" + this.status + ", officer=" + this.officer + "]";
 	}
 
 	

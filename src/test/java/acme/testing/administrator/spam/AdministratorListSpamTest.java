@@ -30,7 +30,7 @@ public class AdministratorListSpamTest extends AcmeWorkPlansTest{
 	@Order(11)
 	public void spamNegative() {
 		
-		super.signIn("manager", "manager");
+		super.signIn("officer", "officer");
 		
 		super.navigate("/administrator/spam", "list");
 		

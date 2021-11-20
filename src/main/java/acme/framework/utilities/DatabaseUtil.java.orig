@@ -23,7 +23,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map.Entry;
 
-import javax.persistence.EntityManager;
+import javax.persistence.EntityOfficer;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.metamodel.EmbeddableType;
@@ -43,7 +43,7 @@ import org.hibernate.tool.schema.spi.ScriptTargetOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.PlatformTransactionOfficer;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
@@ -58,10 +58,10 @@ public class DatabaseUtil {
 	// Internal state ---------------------------------------------------------
 
 	@PersistenceContext
-	protected EntityManager					entityManager;
+	protected EntityOfficer					entityOfficer;
 
 	@Autowired
-	protected PlatformTransactionManager	transactionManager;
+	protected PlatformTransactionOfficer	transactionOfficer;
 
 	@Autowired
 	protected Environment					environment;
@@ -84,7 +84,7 @@ public class DatabaseUtil {
 		assert !this.isTransactionActive();
 
 		this.transactionDefinition = new DefaultTransactionDefinition();
-		this.transactionStatus = this.transactionManager.getTransaction(this.transactionDefinition);
+		this.transactionStatus = this.transactionOfficer.getTransaction(this.transactionDefinition);
 		this.setReadUncommittedIsolationLevel();
 		this.clearPersistenceContext();
 	}
@@ -93,7 +93,7 @@ public class DatabaseUtil {
 		assert this.isTransactionActive();
 
 		try {
-			this.transactionManager.commit(this.transactionStatus);
+			this.transactionOfficer.commit(this.transactionStatus);
 		} catch (final Throwable oops) {
 			ThrowableHelper.print(oops);
 		} finally {
@@ -106,7 +106,7 @@ public class DatabaseUtil {
 		assert this.isTransactionActive();
 
 		try {
-			this.transactionManager.rollback(this.transactionStatus);
+			this.transactionOfficer.rollback(this.transactionStatus);
 		} catch (final Throwable oops) {
 			ThrowableHelper.print(oops);
 		} finally {
@@ -163,7 +163,7 @@ public class DatabaseUtil {
 
 		Session session;
 
-		session = this.entityManager.unwrap(Session.class);
+		session = this.entityOfficer.unwrap(Session.class);
 		session.doWork(connection -> {
 			Statement statement;
 
@@ -179,7 +179,7 @@ public class DatabaseUtil {
 		int result;
 		Query query;
 
-		query = this.entityManager.createQuery(command);
+		query = this.entityOfficer.createQuery(command);
 		result = query.executeUpdate();
 
 		return result;
@@ -191,7 +191,7 @@ public class DatabaseUtil {
 		List<?> result;
 		Query query;
 
-		query = this.entityManager.createQuery(command);
+		query = this.entityOfficer.createQuery(command);
 		result = query.getResultList();
 
 		return result;
@@ -201,7 +201,7 @@ public class DatabaseUtil {
 		assert entity != null;
 		assert this.isTransactionActive();
 
-		this.entityManager.persist(entity);
+		this.entityOfficer.persist(entity);
 	}
 
 	// Miscellaneous ----------------------------------------------------------
@@ -211,7 +211,7 @@ public class DatabaseUtil {
 		org.hibernate.engine.spi.PersistenceContext context;
 		Entry<Object, EntityEntry>[] entries;
 
-		session = this.entityManager.unwrap(SessionImplementor.class);
+		session = this.entityOfficer.unwrap(SessionImplementor.class);
 		context = session.getPersistenceContext();
 		entries = context.reentrantSafeEntityEntries();
 
@@ -221,7 +221,7 @@ public class DatabaseUtil {
 	}
 
 	public void clearPersistenceContext() {
-		this.entityManager.clear();
+		this.entityOfficer.clear();
 	}
 
 	// Internal methods -------------------------------------------------------
@@ -236,11 +236,11 @@ public class DatabaseUtil {
 		Collection<EntityType<?>> entities;
 		Collection<EmbeddableType<?>> embeddables;
 		
-		session = this.entityManager.unwrap(Session.class);
+		session = this.entityOfficer.unwrap(Session.class);
 		assert session != null;
 		registry = session.getSessionFactory().getSessionFactory().getServiceRegistry().getParentServiceRegistry();
 		sources = new MetadataSources(registry);
-		metamodel = this.entityManager.getMetamodel();
+		metamodel = this.entityOfficer.getMetamodel();
 		entities = metamodel.getEntities();
 		for (final EntityType<?> entity : entities) {
 			sources.addAnnotatedClass(entity.getJavaType());
