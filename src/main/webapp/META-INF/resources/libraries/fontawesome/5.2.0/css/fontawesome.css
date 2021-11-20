@@ -3103,7 +3103,7 @@ readers do not read off random characters that represent icons */
 .fa-tape:before {
   content: "\f4db"; }
 
-.fa-tasks:before {
+.fa-duties:before {
   content: "\f0ae"; }
 
 .fa-taxi:before {

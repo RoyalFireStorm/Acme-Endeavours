@@ -6,8 +6,8 @@ recordIndex,title,startMoment,endMoment,workload,status,description,link
 4,actualizado-Change the overall style of the website,2027/01/21 14:10,,85.40,PUBLIC,"Change the overall style of the website, modifying the logos, fonts and colors of the pages. It should use brownish tones",
 5,actualizado-Add your fav link,2027/01/21 18:10,,10.10,PUBLIC,Add your favourite link to the menu. You must display an i18d message: Member's favourite link; and it must link your favourite web site.,
 6,actualizado-Edit model.uxf and create Java class,,2027/12/12 17:26,15.50,PRIVATE,Edit model.uxf and create Java class,
-7,actualizado-Create the entity Task for level C,,2027/04/20 18:00,1.50,PUBLIC,"The entity Task must include: a title, an execution period, a description,and an optional link.",
-8,,2027/04/20 18:30,2027/04/22 10:00,,PRIVATE,List the public tasks that are non-finished (sorted by execution    period or work-load). Show the details of any public tasks that are non-finished.,
-9,,,2027/04/22 10:00,2.50,PUBLIC,List the public tasks that are finished (sorted by execution period or workload).,
+7,actualizado-Create the entity Duty for level C,,2027/04/20 18:00,1.50,PUBLIC,"The entity Duty must include: a title, an execution period, a description,and an optional link.",
+8,,2027/04/20 18:30,2027/04/22 10:00,,PRIVATE,List the public duties that are non-finished (sorted by execution    period or work-load). Show the details of any public duties that are non-finished.,
+9,,,2027/04/22 10:00,2.50,PUBLIC,List the public duties that are finished (sorted by execution period or workload).,
 10,,2027/04/23 00:00,2027/04/30 17:00,3.80,PUBLIC,,https://github.com/Servandofg12/DP2-June13/projects/1
 11,actualizado-Change the background color of the header menu,2027/12/21 17:10,2027/12/30 17:58,,PUBLIC,Change the background color of the header menu to light green,https://github.com/Servandofg12/DP2-June13/projects/1

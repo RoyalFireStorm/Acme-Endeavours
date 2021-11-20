@@ -1,19 +1,19 @@
 administrator.dashboard.form.title.show = Dashboard
 
 administrator.dashboard.form.title.general-indicators = General indicators
-administrator.dashboard.form.label.total-number-task-public =  Total number of tasks public
-administrator.dashboard.form.label.total-number-task-private =  Total number of tasks private
-administrator.dashboard.form.label.total-number-task-no-finished =  Total number of unfinished tasks
-administrator.dashboard.form.label.total-number-task-finished =  Total number of finished tasks
+administrator.dashboard.form.label.total-number-duty-public =  Total number of duties public
+administrator.dashboard.form.label.total-number-duty-private =  Total number of duties private
+administrator.dashboard.form.label.total-number-duty-no-finished =  Total number of unfinished duties
+administrator.dashboard.form.label.total-number-duty-finished =  Total number of finished duties
 
 administrator.dashboard.form.title.workload-statistics = Workload Statistics
-administrator.dashboard.form.label.average-task-workload =  Average Task Workload
-administrator.dashboard.form.label.deviation-task-workload =  Deviation Task Workload
-administrator.dashboard.form.label.minimum-task-workload =  Minimum Task Workload
-administrator.dashboard.form.label.maximum-task-workload =  Maximum Task Workload
+administrator.dashboard.form.label.average-duty-workload =  Average Duty Workload
+administrator.dashboard.form.label.deviation-duty-workload =  Deviation Duty Workload
+administrator.dashboard.form.label.minimum-duty-workload =  Minimum Duty Workload
+administrator.dashboard.form.label.maximum-duty-workload =  Maximum Duty Workload
 
 administrator.dashboard.form.title.execution-period-statistics = Execution Period Statistics
-administrator.dashboard.form.label.average-task-execution-period = Average Task Execution Period
-administrator.dashboard.form.label.deviation-task-execution-period =  Deviation Task Execution Period
-administrator.dashboard.form.label.minimum-task-execution-period =  Minimum Task Execution Period
-administrator.dashboard.form.label.maximum-task-execution-period =  Maximum Task Execution Period
+administrator.dashboard.form.label.average-duty-execution-period = Average Duty Execution Period
+administrator.dashboard.form.label.deviation-duty-execution-period =  Deviation Duty Execution Period
+administrator.dashboard.form.label.minimum-duty-execution-period =  Minimum Duty Execution Period
+administrator.dashboard.form.label.maximum-duty-execution-period =  Maximum Duty Execution Period

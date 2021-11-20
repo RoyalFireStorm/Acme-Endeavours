@@ -324,7 +324,7 @@ Shout
       <h>96</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Task
+Duty
 --
 + title: String {NotEmpty, Length(max = 80)}
 + startMoment: Date {NotNull, Temporal{TIMESTAMP}}

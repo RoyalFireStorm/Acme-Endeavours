@@ -5,4 +5,4 @@ recordIndex,title,start_moment,end_moment,description,workload,status,link,id,ve
 3,Populate Data Base,2021/02/01 00:00,2021/02/28 00:00,Populate Data Base with new information,62.30,PUBLIC,,274,0,254
 4,Add a new funcionallity,2021/04/11 14:00,2021/06/11 10:16,Add a new functionality that you consider important,15.50,PUBLIC,,255,0,250
 5,Change the overall style of the website,2021/06/21 14:10,2021/06/30 17:46,"Change the overall style of the website, modifying the logos, fonts and colors of the pages. It should use brownish tones",85.40,PUBLIC,,,,
-6,Create the entity Task for level C,2021/08/19 00:00,2021/08/20 18:00,"The entity Task must include: a title, an execution period, a description,and an optional link.",1.50,PUBLIC,,,,
+6,Create the entity Duty for level C,2021/08/19 00:00,2021/08/20 18:00,"The entity Duty must include: a title, an execution period, a description,and an optional link.",1.50,PUBLIC,,,,

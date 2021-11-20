@@ -3,7 +3,7 @@ package acme.features.administrator.dashboard;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tasks.TaskStatus;
+import acme.entities.duties.DutyStatus;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -55,8 +55,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Double maximumTaskExtPeriod;
 		final Double minimumTaskExtPeriod;
 
-		totalNumberTaskPublic = this.repository.totalNumberTaskbyStatus(TaskStatus.PUBLIC);
-		totalNumberTaskPrivate = this.repository.totalNumberTaskbyStatus(TaskStatus.PRIVATE);
+		totalNumberTaskPublic = this.repository.totalNumberTaskbyStatus(DutyStatus.PUBLIC);
+		totalNumberTaskPrivate = this.repository.totalNumberTaskbyStatus(DutyStatus.PRIVATE);
 		
 		totalNumberTaskFinished = this.repository.totalNumberTaskFinished();
 		totalNumberTaskNoFinished= this.repository.totalNumberTaskNoFinished();

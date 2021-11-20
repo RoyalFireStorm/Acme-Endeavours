@@ -26,13 +26,13 @@
 			<acme:menu-suboption code="master.menu.anonymous.listShout" action="/anonymous/shout/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.createShout" action="/anonymous/shout/create"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.anonymous.listTask" action="/anonymous/task/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.listTask" action="/anonymous/duty/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.manager" access="hasRole('Manager')">
 		
-			<acme:menu-suboption code="master.menu.manager.createTask" action="/manager/task/create"/>
-			<acme:menu-suboption code="master.menu.manager.listTask" action="/manager/task/list"/>
+			<acme:menu-suboption code="master.menu.manager.createTask" action="/manager/duty/create"/>
+			<acme:menu-suboption code="master.menu.manager.listTask" action="/manager/duty/list"/>
 		</acme:menu-option>
 		
 
@@ -59,7 +59,7 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">	
-			<acme:menu-suboption code="master.menu.authenticated.listTask" action="/authenticated/task/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.listTask" action="/authenticated/duty/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

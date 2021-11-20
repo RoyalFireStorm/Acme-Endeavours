@@ -81,59 +81,59 @@
 		<property name="text" value="If you can dream it, you can do it"/>
 		<property name="info" value="https://i.pinimg.com/originals/10/04/58/100458c1e22397fb55c081cc88232daa.jpg"></property>
 	</bean>
-	<!-- Tasks-->
-	<bean id="task01" class="acme.entities.tasks.Task">
-		<property name="title" value="Create the entity Task for level C"/>
+	<!-- Duties-->
+	<bean id="duty01" class="acme.entities.duties.Duty">
+		<property name="title" value="Create the entity Duty for level C"/>
 		<property name="startMoment" value="2021/08/19 00:00"/>
 		<property name="endMoment" value="2021/08/20 18:00"/>
-		<property name="description" value="The entity Task must include: a title, an execution period, a description,and an optional link."/>
+		<property name="description" value="The entity Duty must include: a title, an execution period, a description,and an optional link."/>
 		<property name="workload" value="1.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
 		<property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task02" class="acme.entities.tasks.Task">
-		<property name="title" value="List public tasks that are non-finished for level C"/>
+	<bean id="duty02" class="acme.entities.duties.Duty">
+		<property name="title" value="List public duties that are non-finished for level C"/>
 		<property name="startMoment" value="2021/09/20 18:30"/>
 		<property name="endMoment" value="2021/09/22 10:00"/>
-		<property name="description" value="List the public tasks that are non-finished (sorted by execution 
-		period or work-load). Show the details of any public tasks that are non-finished."/>
+		<property name="description" value="List the public duties that are non-finished (sorted by execution 
+		period or work-load). Show the details of any public duties that are non-finished."/>
 		<property name="workload" value="2.5"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
 		<property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task03" class="acme.entities.tasks.Task">
-		<property name="title" value="List public tasks finished for level C"/>
+	<bean id="duty03" class="acme.entities.duties.Duty">
+		<property name="title" value="List public duties finished for level C"/>
 		<property name="startMoment" value="2021/09/20 18:30"/>
 		<property name="endMoment" value="2021/09/22 10:00"/>
-		<property name="description" value="List the public tasks that are finished (sorted by execution period or workload)."/>
+		<property name="description" value="List the public duties that are finished (sorted by execution period or workload)."/>
 		<property name="workload" value="2.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link"> <null/></property>
 		<property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task04" class="acme.entities.tasks.Task">
+	<bean id="duty04" class="acme.entities.duties.Duty">
 		<property name="title" value="Show the details for level C"/>
 		<property name="startMoment" value="2021/11/19 00:00"/>
 		<property name="endMoment" value="2021/11/30 10:00"/>
-		<property name="description" value="An authenticated principal must be able to: Show the details of the public tasks that are finished"/>
+		<property name="description" value="An authenticated principal must be able to: Show the details of the public duties that are finished"/>
 		<property name="workload" value="2.5"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link"> <null/></property>
 		<property name="manager" ref="administratorManager2"/>
 	</bean>
-	<bean id="task05" class="acme.entities.tasks.Task">
+	<bean id="duty05" class="acme.entities.duties.Duty">
 		<property name="title" value="Create a dashboard for level C"/>
 		<property name="startMoment" value="2021/11/23 00:00"/>
 		<property name="endMoment" value="2021/11/30 17:00"/>
-		<property name="description" value="Information: num of task public/priv, num of finished/not finished task, etc"/>
+		<property name="description" value="Information: num of duty public/priv, num of finished/not finished duty, etc"/>
 		<property name="workload" value="3.8"/>
 		<property name="status" value="PRIVATE"/>
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-		<bean id="task06" class="acme.entities.tasks.Task">
+		<bean id="duty06" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the color of the header buttons"/>
 		<property name="startMoment" value= "2022/12/21 10:10"/>
 		<property name="endMoment" value="2023/04/30 17:00"/>
@@ -143,7 +143,7 @@
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
     <property name="manager" ref="administratorManager2"/>
 	</bean>
-		<bean id="task07" class="acme.entities.tasks.Task">
+		<bean id="duty07" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the background color of the header menu"/>
 		<property name="startMoment" value= "2021/12/21 17:10"/>
 		<property name="endMoment" value="2021/12/30 17:58"/>
@@ -153,7 +153,7 @@
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-		<bean id="task08" class="acme.entities.tasks.Task">
+		<bean id="duty08" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the message of the Welcome page"/>
 		<property name="startMoment" value= "2020/11/21 10:10"/>
 		<property name="endMoment" value="2021/12/30 17:26"/>
@@ -163,17 +163,17 @@
 		<property name="link" value="https://github.com/Servandofg12/DP2-June13/projects/1"></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-		<bean id="task09" class="acme.entities.tasks.Task">
+		<bean id="duty09" class="acme.entities.duties.Duty">
 		<property name="title" value="Create a technical report (in Spanish) that describes the history of the project"/>
 		<property name="startMoment" value= "2022/06/21 04:10"/>
 		<property name="endMoment" value="2022/08/30 17:26"/>
-		<property name="description" value="Create a technical report (in Spanish) that describes the history of the project after finishing with the previous tasks"/>
+		<property name="description" value="Create a technical report (in Spanish) that describes the history of the project after finishing with the previous duties"/>
 		<property name="workload" value="32.13"/>
 		<property name="status" value="PUBLIC"/>
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager2"/>
 	</bean>
-		<bean id="task10" class="acme.entities.tasks.Task">
+		<bean id="duty10" class="acme.entities.duties.Duty">
 		<property name="title" value="Add delete support"/>
 		<property name="startMoment" value= "2020/07/21 04:10"/>
 		<property name="endMoment" value="2022/09/30 17:26"/>
@@ -183,7 +183,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task11" class="acme.entities.tasks.Task">
+	<bean id="duty11" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the overall style of the website"/>
 		<property name="startMoment" value= "2021/06/21 14:10"/>
 		<property name="endMoment" value="2021/06/30 17:46"/>
@@ -193,7 +193,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task12" class="acme.entities.tasks.Task">
+	<bean id="duty12" class="acme.entities.duties.Duty">
 		<property name="title" value="Edit model.uxf and create Java class"/>
 		<property name="startMoment" value= "2021/09/11 14:10"/>
 		<property name="endMoment" value="2025/6/13 17:26"/>
@@ -203,7 +203,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task13" class="acme.entities.tasks.Task">
+	<bean id="duty13" class="acme.entities.duties.Duty">
 		<property name="title" value="Add your fav link"/>
 		<property name="startMoment" value= "2021/06/21 18:10"/>
 		<property name="endMoment" value="2023/12/11 16:46"/>
@@ -213,7 +213,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-		<bean id="task14" class="acme.entities.tasks.Task">
+		<bean id="duty14" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the logo of the website"/>
 		<property name="startMoment" value= "2021/02/21 14:10"/>
 		<property name="endMoment" value="2023/03/31 10:46"/>
@@ -223,7 +223,7 @@
 		<property name="link"> <null/></property>
       <property name="manager" ref="administratorManager2"/>
 	</bean>
-	<bean id="task15" class="acme.entities.tasks.Task">
+	<bean id="duty15" class="acme.entities.duties.Duty">
 		<property name="title" value="Add a new funcionallity"/>
 		<property name="startMoment" value= "2021/04/11 14:00"/>
 		<property name="endMoment" value="2021/06/11 10:16"/>
@@ -233,7 +233,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager2"/>
 	</bean>
-	<bean id="task16" class="acme.entities.tasks.Task">
+	<bean id="duty16" class="acme.entities.duties.Duty">
 		<property name="title" value="Add your contact address"/>
 		<property name="startMoment" value= "2021/01/21 18:00"/>
 		<property name="endMoment" value="2022/12/11 21:00"/>
@@ -243,7 +243,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager2"/>
 	</bean>
-		<bean id="task17" class="acme.entities.tasks.Task">
+		<bean id="duty17" class="acme.entities.duties.Duty">
 		<property name="title" value="Add a new link"/>
 		<property name="startMoment" value= "2020/01/21 18:10"/>
 		<property name="endMoment" value="2020/12/11 16:46"/>
@@ -253,7 +253,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager2"/>
 	</bean>
-		<bean id="task18" class="acme.entities.tasks.Task">
+		<bean id="duty18" class="acme.entities.duties.Duty">
 		<property name="title" value="Change the logo of the website to a puppy photo"/>
 		<property name="startMoment" value= "2019/01/21 14:00"/>
 		<property name="endMoment" value="2019/12/30 10:00"/>
@@ -263,7 +263,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task19" class="acme.entities.tasks.Task">
+	<bean id="duty19" class="acme.entities.duties.Duty">
 		<property name="title" value="Delete shout funcionallity"/>
 		<property name="startMoment" value= "2021/01/11 09:00"/>
 		<property name="endMoment" value="2021/02/11 12:00"/>
@@ -273,7 +273,7 @@
 		<property name="link"> <null/></property>
     <property name="manager" ref="administratorManager"/>
 	</bean>
-	<bean id="task20" class="acme.entities.tasks.Task">
+	<bean id="duty20" class="acme.entities.duties.Duty">
 		<property name="title" value="Populate Data Base"/>
 		<property name="startMoment" value= "2021/02/01 00:00"/>
 		<property name="endMoment" value="2021/02/28 00:00"/>
