@@ -13,7 +13,7 @@ who have enroled the Design and Testing subject of the Software Engineering curr
 University of Sevilla.  This project helps them start working on their new information system 
 projects.
 
-Enlace al repositorio de GitHub: https://github.com/RoyalFireStorm/Acme-Work-Plans
+Enlace al repositorio de GitHub: https://github.com/RoyalFireStorm/Acme-Endeavours
 
 Enlace a la release: https://github.com/RoyalFireStorm/Acme-Work-Plans/releases/tag/1.4
 
