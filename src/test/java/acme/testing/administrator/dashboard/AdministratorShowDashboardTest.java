@@ -9,9 +9,9 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AdministratorShowDashboardTest extends AcmeWorkPlansTest{
+public class AdministratorShowDashboardTest extends AcmeEndeavoursTest{
 
 	//Test del dashboard positivo, se espera
 	//que los datos introducidos en el csv correspondan con los que muestra el dashboard en la página	

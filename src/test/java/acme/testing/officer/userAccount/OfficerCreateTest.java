@@ -2,9 +2,9 @@ package acme.testing.officer.userAccount;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class OfficerCreateTest extends AcmeWorkPlansTest{
+public class OfficerCreateTest extends AcmeEndeavoursTest{
 	// Lifecycle management ---------------------------------------------------
 	
 			// Test cases -------------------------------------------------------------

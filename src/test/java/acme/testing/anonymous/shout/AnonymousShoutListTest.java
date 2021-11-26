@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AnonymousShoutListTest extends AcmeWorkPlansTest {
+public class AnonymousShoutListTest extends AcmeEndeavoursTest {
 
 	// Lifecycle management ---------------------------------------------------
 	

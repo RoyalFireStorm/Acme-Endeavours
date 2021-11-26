@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AdministratorUpdateSpamTest extends AcmeWorkPlansTest{
+public class AdministratorUpdateSpamTest extends AcmeEndeavoursTest{
 
 	//Test de la feature administrator/spam/update negativo, se espera que un administrador
 	//pueda updatear los valores de las palabras spam con valores vacíos.

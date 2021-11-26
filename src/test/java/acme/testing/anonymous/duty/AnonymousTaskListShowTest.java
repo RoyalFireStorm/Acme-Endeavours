@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AnonymousTaskListShowTest extends AcmeWorkPlansTest{
+public class AnonymousTaskListShowTest extends AcmeEndeavoursTest{
 	
 	// Internal state ---------------------------------------------------------
 

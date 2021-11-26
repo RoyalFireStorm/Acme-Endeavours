@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AdministratorThresholdUpdateTest extends AcmeWorkPlansTest {
+public class AdministratorThresholdUpdateTest extends AcmeEndeavoursTest {
 	
 	//Test de la feature administrator/threshold/update positivo, se espera que el administrador
 	//pueda updatear el valor del threshold sin problema

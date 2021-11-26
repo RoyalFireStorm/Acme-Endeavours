@@ -1,0 +1,7 @@
+recordIndex,title,start_moment,end_moment,description,workload,status,link,id,version,officer_id
+0,Delete shout funcionallity,2021/01/11 09:00,2021/02/11 12:00,Delete shout funcionallity,24.00,PUBLIC,,296,0,261
+1,Edit model.uxf and create Java class,2021/01/11 14:10,2021/06/13 17:26,Edit model.uxf and create Java class,15.50,PUBLIC,,289,0,261
+2,Add delete support,2021/01/21 04:10,2021/08/30 17:26,Add delete support to all main domain objects,45.30,PUBLIC,,287,0,261
+3,Populate Data Base,2021/02/01 00:00,2021/02/28 00:00,Populate Data Base with new information,62.30,PUBLIC,,297,0,265
+4,Populate Data Base 2,2021/05/01 00:00,2021/09/28 00:00,Populate Data Base with new information again,65.30,PUBLIC,,298,0,265
+5,Create a technical report (in Spanish) that describes the history of the project,2021/06/21 04:10,2021/08/30 17:26,Create a technical report (in Spanish) that describes the history of the project after finishing with the previous duties,32.13,PUBLIC,,,,

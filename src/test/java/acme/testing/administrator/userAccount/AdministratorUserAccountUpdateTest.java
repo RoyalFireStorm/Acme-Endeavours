@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AdministratorUserAccountUpdateTest extends AcmeWorkPlansTest{
+public class AdministratorUserAccountUpdateTest extends AcmeEndeavoursTest{
 	
 	/*Caso positivo: Un usuario administrador actualiza los datos de las cuentas de usuario (update)
 	 *  Resultado esperado: Éxito a la hora de realizar la actualización.*/ 

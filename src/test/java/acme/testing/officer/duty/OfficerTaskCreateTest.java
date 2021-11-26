@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class OfficerTaskCreateTest  extends AcmeWorkPlansTest  {
+public class OfficerTaskCreateTest  extends AcmeEndeavoursTest  {
 	
 	//Test de la creación de duties de un Officer (positivo). Introducimos valores correctos para cada campo del formulario y creamos la duty.
 	@ParameterizedTest

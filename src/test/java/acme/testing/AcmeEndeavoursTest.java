@@ -16,7 +16,7 @@ package acme.testing;
 import org.hibernate.internal.util.StringHelper;
 import org.junit.jupiter.api.BeforeAll;
 
-public abstract class AcmeWorkPlansTest extends AcmeTest {
+public abstract class AcmeEndeavoursTest extends AcmeTest {
 
 	// Internal state ---------------------------------------------------------
 
@@ -30,7 +30,7 @@ public abstract class AcmeWorkPlansTest extends AcmeTest {
 
 
 
-		super.setBaseCamp("http", "localhost", "8080", "/Acme-Work-Plans", "/master/welcome", "?language=en&debug=true");
+		super.setBaseCamp("http", "localhost", "8080", "/Acme-Endeavours", "/master/welcome", "?language=en&debug=true");
 		super.setAutoPausing(false);
 		
 		this.navigateHome();

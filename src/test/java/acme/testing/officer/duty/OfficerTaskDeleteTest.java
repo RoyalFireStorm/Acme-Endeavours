@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class OfficerTaskDeleteTest extends AcmeWorkPlansTest {
+public class OfficerTaskDeleteTest extends AcmeEndeavoursTest {
 	
 	//Test del borrado de duties de un Officer (positivo). Borramos varias duties e intentamos acceder a ellas. Se espera que no se pueda ya que se han borrado con exito.
 	@ParameterizedTest

@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AdministratorListSpamTest extends AcmeWorkPlansTest{
+public class AdministratorListSpamTest extends AcmeEndeavoursTest{
 
 	
 	//Test de la feature administrator/spam/list positivo, se espera que un administrador

@@ -1,0 +1,13 @@
+recordIndex,title,startMoment,endMoment,workload,description,link,status
+0,Delete shout funcionallity,2021/01/11 09:00,2021/02/11 12:00,24.00,Delete shout funcionallity,,PUBLIC
+1,Edit model.uxf and create Java class,2021/01/11 14:10,2021/06/13 17:26,15.50,Edit model.uxf and create Java class,,PUBLIC
+2,Add delete support,2021/01/21 04:10,2021/08/30 17:26,45.30,Add delete support to all main domain objects,,PUBLIC
+3,Change the logo of the website to a puppy photo,2021/01/21 14:00,2022/12/30 10:00,25.44,Change the logo of the website to a puppy photo,,PUBLIC
+4,Change the overall style of the website,2021/06/21 14:10,2022/06/30 17:46,85.40,"Change the overall style of the website, modifying the logos, fonts and colors of the pages. It should use brownish tones",,PUBLIC
+5,Add your fav link,2021/06/21 18:10,2023/12/11 16:46,10.10,Add your favourite link to the menu. You must display an i18d message: Member's favourite link; and it must link your favourite web site.,,PRIVATE
+6,List public duties that are non-finished for level C,2021/09/20 18:30,2022/09/22 10:00,2.50,List the public duties that are non-finished (sorted by execution    period or work-load). Show the details of any public duties that are non-finished.,,PUBLIC
+7,Create the entity Duty for level C,2021/11/19 00:00,2022/08/20 18:00,1.50,"The entity Duty must include: a title, an execution period, a description,and an optional link.",,PUBLIC
+8,List public duties finished for level C,2021/11/20 18:30,2022/01/22 10:00,2.50,List the public duties that are finished (sorted by execution period or workload).,,PRIVATE
+9,Change the message of the Welcome page,2021/11/21 10:10,2021/12/30 17:26,22.50,Change the message of the Welcome page to an image of a monkey,https://github.com/Servandofg12/DP2-June13/projects/1,PRIVATE
+10,Create a dashboard for level C,2021/11/23 00:00,2021/11/30 17:00,3.80,"Information: num of duty public/priv, num of finished/not finished duty, etc",https://github.com/Servandofg12/DP2-June13/projects/1,PRIVATE
+11,Change the background color of the header menu,2021/12/21 17:10,2022/02/28 17:58,12.50,Change the background color of the header menu to light green,https://github.com/Servandofg12/DP2-June13/projects/1,PUBLIC

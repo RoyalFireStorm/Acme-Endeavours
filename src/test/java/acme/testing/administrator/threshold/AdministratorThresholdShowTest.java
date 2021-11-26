@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AdministratorThresholdShowTest  extends AcmeWorkPlansTest {
+public class AdministratorThresholdShowTest  extends AcmeEndeavoursTest {
 	
 	static final String Label= "Update the Spam Threshold";
 	
