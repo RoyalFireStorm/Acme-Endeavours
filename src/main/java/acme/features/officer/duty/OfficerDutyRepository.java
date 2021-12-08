@@ -11,7 +11,7 @@ import acme.framework.repositories.AbstractRepository;
 
 
 @Repository
-public interface OfficerTaskRepository extends AbstractRepository {
+public interface OfficerDutyRepository extends AbstractRepository {
 
 	@Query("select t from Duty t where t.id = ?1")
 	Duty findOneTaskById(int id);

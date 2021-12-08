@@ -15112,3 +15112,267 @@ WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: At
 	Unsaved transient entity: ([acme.entities.roles.Officer#0])
 	Dependent entities: ([[acme.entities.duties.Duty#236]])
 	Non-nullable association(s): ([acme.entities.duties.Duty.officer])
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-MPDACBC5 with PID 3412 (C:\Users\jexli\Desktop\Workspace-21.1\Projects\Acme-Endeavours\target\classes started by jexli in C:\Users\jexli\Desktop\Workspace-21.1\Projects\Acme-Endeavours)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 10.118 seconds (JVM running for 11.776)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-MPDACBC5 with PID 292 (C:\Users\jexli\Desktop\Workspace-21.1\Projects\Acme-Endeavours\target\classes started by jexli in C:\Users\jexli\Desktop\Workspace-21.1\Projects\Acme-Endeavours)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 9.387 seconds (JVM running for 10.268)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty12 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty13 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty14 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty15 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty16 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty17 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty18 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty19 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty20 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating duty21 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam4 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam5 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam6 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam7 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam8 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam9 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating threshold1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating officerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorOfficer ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating officerUserAccount2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorOfficer2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating consumerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating consumerAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating consumerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating consumerConsumer ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating providerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating providerAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating providerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating providerProvider ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating authenticatedUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating authenticatedAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating authenticatedUserAccount2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating authenticatedAuthenticated2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for shout04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for shout05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for shout06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for shout07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for shout08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout10.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty01.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty02.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty03.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty04.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty05.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty06.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty07.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty08.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty09.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty10.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty11.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty12.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty13.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty14.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty15.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty16.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty17.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty18.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty19.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty20.
+INFO [acme.framework.utilities.DatabasePopulator] > Deferring duty21.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for spam1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for spam2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for spam3.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for spam4.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for spam5.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for spam6.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for spam7.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for spam8.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for spam9.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for spam10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for threshold1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for officerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for administratorOfficer.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for officerUserAccount2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 26 for administratorAdministrator2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 27 for administratorAuthenticated2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 28 for administratorOfficer2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 29 for consumerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 30 for consumerAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 31 for consumerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 32 for consumerConsumer.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 33 for providerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 34 for providerAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 35 for providerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 36 for providerProvider.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 37 for authenticatedUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 38 for authenticatedAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 39 for authenticatedUserAccount2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 40 for authenticatedAuthenticated2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 41 for duty01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 42 for duty02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 43 for duty03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 44 for duty04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 45 for duty05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 46 for duty06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 47 for duty07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 48 for duty08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 49 for duty09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 50 for duty10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 51 for duty11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 52 for duty12.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 53 for duty13.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 54 for duty14.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 55 for duty15.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 56 for duty16.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 57 for duty17.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 58 for duty18.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 59 for duty19.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 60 for duty20.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 61 for duty21.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=237, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=238, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=239, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.entities.shouts.Shout{id=240, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout05 = acme.entities.shouts.Shout{id=241, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout06 = acme.entities.shouts.Shout{id=242, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout07 = acme.entities.shouts.Shout{id=243, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout08 = acme.entities.shouts.Shout{id=244, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout09 = acme.entities.shouts.Shout{id=245, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout10 = acme.entities.shouts.Shout{id=246, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam1 = hard core
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam2 = sex
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam3 = viagra
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam4 = cialis
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam5 = nigeria
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam6 = you've won
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam7 = million dollar
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam8 = sexo
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam9 = Has ganado
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam10 = millón de euros
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting threshold1 = 10.0
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting officerUserAccount = acme.framework.entities.UserAccount{id=258, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=259, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=260, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorOfficer = acme.entities.roles.Officer{id=261, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting officerUserAccount2 = acme.framework.entities.UserAccount{id=262, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator2 = acme.framework.entities.Administrator{id=263, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated2 = acme.framework.entities.Authenticated{id=264, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorOfficer2 = acme.entities.roles.Officer{id=265, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting consumerUserAccount = acme.framework.entities.UserAccount{id=266, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting consumerAdministrator = acme.framework.entities.Administrator{id=267, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting consumerAuthenticated = acme.framework.entities.Authenticated{id=268, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting consumerConsumer = acme.entities.roles.Consumer{id=269, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting providerUserAccount = acme.framework.entities.UserAccount{id=270, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting providerAdministrator = acme.framework.entities.Administrator{id=271, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting providerAuthenticated = acme.framework.entities.Authenticated{id=272, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting providerProvider = acme.entities.roles.Provider{id=273, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting authenticatedUserAccount = acme.framework.entities.UserAccount{id=274, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting authenticatedAuthenticated = acme.framework.entities.Authenticated{id=275, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting authenticatedUserAccount2 = acme.framework.entities.UserAccount{id=276, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting authenticatedAuthenticated2 = acme.framework.entities.Authenticated{id=277, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty01 = Duty [title=Create the entity Duty for level C, startMoment=Fri Nov 19 00:00:00 CET 2021, endMoment=Sat Aug 20 18:00:00 CEST 2022, description=The entity Duty must include: a title, an execution period, a description,and an optional link., workload=1.5, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty02 = Duty [title=List public duties that are non-finished for level C, startMoment=Mon Sep 20 18:30:00 CEST 2021, endMoment=Thu Sep 22 10:00:00 CEST 2022, description=List the public duties that are non-finished (sorted by execution    period or work-load). Show the details of any public duties that are non-finished., workload=2.5, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty03 = Duty [title=List public duties finished for level C, startMoment=Sat Nov 20 18:30:00 CET 2021, endMoment=Sat Jan 22 10:00:00 CET 2022, description=List the public duties that are finished (sorted by execution period or workload)., workload=2.5, link=null, status=PRIVATE, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty04 = Duty [title=Show the details for level C, startMoment=Fri Nov 19 00:00:00 CET 2021, endMoment=Sun Jan 30 10:00:00 CET 2022, description=An authenticated principal must be able to: Show the details of the public duties that are finished, workload=2.5, link=null, status=PRIVATE, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty05 = Duty [title=Create a dashboard for level C, startMoment=Tue Nov 23 00:00:00 CET 2021, endMoment=Tue Nov 30 17:00:00 CET 2021, description=Information: num of duty public/priv, num of finished/not finished duty, etc, workload=3.8, link=https://github.com/Servandofg12/DP2-June13/projects/1, status=PRIVATE, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty06 = Duty [title=Change the color of the header buttons, startMoment=Tue Dec 21 10:10:00 CET 2021, endMoment=Sun Apr 30 17:00:00 CEST 2023, description=Change the color of the header buttons when selected to red, workload=20.5, link=https://github.com/Servandofg12/DP2-June13/projects/1, status=PRIVATE, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty07 = Duty [title=Change the background color of the header menu, startMoment=Tue Dec 21 17:10:00 CET 2021, endMoment=Mon Feb 28 17:58:00 CET 2022, description=Change the background color of the header menu to light green, workload=12.5, link=https://github.com/Servandofg12/DP2-June13/projects/1, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty08 = Duty [title=Change the message of the Welcome page, startMoment=Sun Nov 21 10:10:00 CET 2021, endMoment=Thu Dec 30 17:26:00 CET 2021, description=Change the message of the Welcome page to an image of a monkey, workload=22.5, link=https://github.com/Servandofg12/DP2-June13/projects/1, status=PRIVATE, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty09 = Duty [title=Create a technical report (in Spanish) that describes the history of the project, startMoment=Mon Jun 21 04:10:00 CEST 2021, endMoment=Mon Aug 30 17:26:00 CEST 2021, description=Create a technical report (in Spanish) that describes the history of the project after finishing with the previous duties, workload=32.13, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty10 = Duty [title=Add delete support, startMoment=Thu Jan 21 04:10:00 CET 2021, endMoment=Mon Aug 30 17:26:00 CEST 2021, description=Add delete support to all main domain objects , workload=45.3, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty11 = Duty [title=Change the overall style of the website, startMoment=Mon Jun 21 14:10:00 CEST 2021, endMoment=Thu Jun 30 17:46:00 CEST 2022, description=Change the overall style of the website, modifying the logos, fonts and colors of the pages. It should use brownish tones, workload=85.4, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty12 = Duty [title=Edit model.uxf and create Java class, startMoment=Mon Jan 11 14:10:00 CET 2021, endMoment=Sun Jun 13 17:26:00 CEST 2021, description=Edit model.uxf and create Java class, workload=15.5, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty13 = Duty [title=Add your fav link, startMoment=Mon Jun 21 18:10:00 CEST 2021, endMoment=Mon Dec 11 16:46:00 CET 2023, description=Add your favourite link to the menu. You must display an i18d message: Member's favourite link; and it must link your favourite web site., workload=10.1, link=null, status=PRIVATE, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty14 = Duty [title=Change the logo of the website, startMoment=Sun Feb 21 14:10:00 CET 2021, endMoment=Fri Mar 31 10:46:00 CEST 2023, description=Change the logo of the website to your favourite photo, workload=25.44, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty15 = Duty [title=Add a new funcionallity, startMoment=Sun Apr 11 14:00:00 CEST 2021, endMoment=Sat Jun 11 10:16:00 CEST 2022, description=Add a new functionality that you consider important, workload=15.5, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty16 = Duty [title=Add your contact address, startMoment=Thu Jan 21 18:00:00 CET 2021, endMoment=Sun Dec 11 21:00:00 CET 2022, description=Add your contact address and delete your favourite link, workload=46.5, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty17 = Duty [title=Add a new link, startMoment=Thu Jan 21 18:10:00 CET 2021, endMoment=Sun Dec 11 16:46:00 CET 2022, description=Add a new link to the menu., workload=11.1, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty18 = Duty [title=Change the logo of the website to a puppy photo, startMoment=Thu Jan 21 14:00:00 CET 2021, endMoment=Fri Dec 30 10:00:00 CET 2022, description=Change the logo of the website to a puppy photo, workload=25.44, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty19 = Duty [title=Delete shout funcionallity, startMoment=Mon Jan 11 09:00:00 CET 2021, endMoment=Thu Feb 11 12:00:00 CET 2021, description=Delete shout funcionallity , workload=24.0, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=261, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty20 = Duty [title=Populate Data Base, startMoment=Mon Feb 01 00:00:00 CET 2021, endMoment=Sun Feb 28 00:00:00 CET 2021, description=Populate Data Base with new information, workload=62.3, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting duty21 = Duty [title=Populate Data Base 2, startMoment=Sat May 01 00:00:00 CEST 2021, endMoment=Tue Sep 28 00:00:00 CEST 2021, description=Populate Data Base with new information again, workload=65.3, link=null, status=PUBLIC, officer=acme.entities.roles.Officer{id=265, version=0}]
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-Endeavours/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.NumberFormatException

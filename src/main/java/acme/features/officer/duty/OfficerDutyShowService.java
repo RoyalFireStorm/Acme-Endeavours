@@ -10,10 +10,10 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class OfficerTaskShowService implements AbstractShowService<Officer, Duty>{
+public class OfficerDutyShowService implements AbstractShowService<Officer, Duty>{
 
 	@Autowired
-	protected OfficerTaskRepository repository;
+	protected OfficerDutyRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<Duty> request) {

@@ -21,12 +21,12 @@ import acme.framework.components.Response;
 import acme.framework.helpers.PrincipalHelper;
 import acme.framework.services.AbstractUpdateService;
 @Service
-public class OfficerTaskUpdateService implements AbstractUpdateService<Officer, Duty>{
+public class OfficerDutyUpdateService implements AbstractUpdateService<Officer, Duty>{
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected OfficerTaskRepository repository;
+	protected OfficerDutyRepository repository;
 	
 	@Autowired
 	protected SpamService spamService;
@@ -114,6 +114,8 @@ public class OfficerTaskUpdateService implements AbstractUpdateService<Officer, 
 			final Boolean fechaFinBien = startMoment.before(endMoment);
 			errors.state(request, fechaFinBien, "endMoment","officer.duty.error.endMoment");
 		}
+		
+		if(!errors.hasErrors("workload")) {
 		//Validacion workload
 		final Double workload = entity.getWorkload();
 		final BigDecimal bd = new BigDecimal(String.valueOf(workload));
@@ -140,6 +142,8 @@ public class OfficerTaskUpdateService implements AbstractUpdateService<Officer, 
 			final Double workloadMaxInHours = workloadMaxInDays*24;
 		workloadCorrecto = workload <= workloadMaxInHours && workload > 0.;
 		errors.state(request, workloadCorrecto, "workload","officer.duty.error.workload");
+		}
+		
 		}
 	}
 

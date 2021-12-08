@@ -11,10 +11,10 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractDeleteService;
 
 @Service
-public class OfficerTaskDeleteService implements AbstractDeleteService<Officer, Duty>{
+public class OfficerDutyDeleteService implements AbstractDeleteService<Officer, Duty>{
 	
 	@Autowired
-	protected OfficerTaskRepository repository;
+	protected OfficerDutyRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<Duty> request) {

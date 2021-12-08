@@ -13,22 +13,22 @@ import acme.framework.controllers.AbstractController;
 
 @Controller
 @RequestMapping("/officer/duty/")
-public class OfficerTaskController extends AbstractController<Officer, Duty>{
+public class OfficerDutyController extends AbstractController<Officer, Duty>{
 
 	@Autowired
-	private OfficerTaskCreateService createService;
+	private OfficerDutyCreateService createService;
 	
 	@Autowired
-	private OfficerTaskListService listService;
+	private OfficerDutyListService listService;
 	
 	@Autowired
-	private OfficerTaskShowService showService;
+	private OfficerDutyShowService showService;
 	
 	@Autowired
-	private OfficerTaskUpdateService updateService;
+	private OfficerDutyUpdateService updateService;
 	
 	@Autowired
-	private OfficerTaskDeleteService deleteService;
+	private OfficerDutyDeleteService deleteService;
 	
 	@PostConstruct
 	private void initialise() {

@@ -12,10 +12,10 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class OfficerTaskListService implements AbstractListService<Officer, Duty> {
+public class OfficerDutyListService implements AbstractListService<Officer, Duty> {
 
 	@Autowired
-	OfficerTaskRepository repository;
+	OfficerDutyRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Duty> request) {

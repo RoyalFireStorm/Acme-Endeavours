@@ -20,10 +20,10 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class OfficerTaskCreateService implements AbstractCreateService<Officer, Duty> {
+public class OfficerDutyCreateService implements AbstractCreateService<Officer, Duty> {
 
 	@Autowired
-	protected OfficerTaskRepository repository;
+	protected OfficerDutyRepository repository;
 	 
 	@Autowired
 	protected SpamService spamService;
@@ -116,6 +116,8 @@ public class OfficerTaskCreateService implements AbstractCreateService<Officer, 
 			final Boolean fechaFinBien = startMoment.before(endMoment);
 		errors.state(request, fechaFinBien, "endMoment","officer.duty.error.endMoment");
 		}
+		
+		if(!errors.hasErrors("workload")) {
 		//Validacion workload
 		final Double workload = entity.getWorkload();
 		final BigDecimal bd = new BigDecimal(String.valueOf(workload));
@@ -142,6 +144,8 @@ public class OfficerTaskCreateService implements AbstractCreateService<Officer, 
 			final Double workloadMaxInHours = workloadMaxInDays*24;
 		workloadCorrecto = workload <= workloadMaxInHours && workload > 0.;
 		errors.state(request, workloadCorrecto, "workload","officer.duty.error.workload");
+		}
+		
 		}
 
 	}
