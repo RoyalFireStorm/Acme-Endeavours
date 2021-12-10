@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Consumer;
+import acme.features.administrator.threshold.AdministratorThresholdRepository;
+import acme.features.spam.SpamService;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
@@ -33,6 +35,12 @@ public class AuthenticatedConsumerUpdateService implements AbstractUpdateService
 
 	@Autowired
 	protected AuthenticatedConsumerRepository repository;
+	
+	@Autowired
+	protected SpamService spamService;
+	
+	@Autowired
+	protected AdministratorThresholdRepository thresholdRepository;
 
 	// AbstractUpdateService<Authenticated, Consumer> interface -----------------
 
@@ -49,6 +57,10 @@ public class AuthenticatedConsumerUpdateService implements AbstractUpdateService
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		final boolean spam1 = !this.spamService.filtroSpam(entity.getCompany(),this.thresholdRepository.findThreshold().getNumber());
+		errors.state(request, spam1, "company","authenticated.consumer.consumer.error.spam");
+		final boolean spam2 = !this.spamService.filtroSpam(entity.getSector(),this.thresholdRepository.findThreshold().getNumber());
+		errors.state(request, spam2, "sector","authenticated.consumer.consumer.error.spam");
 	}
 
 	@Override
