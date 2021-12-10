@@ -1,10 +1,10 @@
 administrator.dashboard.form.title.show = Panel de indicadores
 
 administrator.dashboard.form.title.general-indicators = Indicadores generales
-administrator.dashboard.form.label.total-number-duty-public =  Número total de tareas públicas
-administrator.dashboard.form.label.total-number-duty-private =  Número total de tareas privadas
-administrator.dashboard.form.label.total-number-duty-no-finished =  Número total de tareas no finalizadas
-administrator.dashboard.form.label.total-number-duty-finished =  Número total de tareas finalizadas
+administrator.dashboard.form.label.total-number-duty-public =  Número total de labores públicas
+administrator.dashboard.form.label.total-number-duty-private =  Número total de labores privadas
+administrator.dashboard.form.label.total-number-duty-no-finished =  Número total de labores no finalizadas
+administrator.dashboard.form.label.total-number-duty-finished =  Número total de labores finalizadas
 
 administrator.dashboard.form.title.workload-statistics = Estadísticas de carga de trabajo
 administrator.dashboard.form.label.average-duty-workload =  Media de carga de trabajo

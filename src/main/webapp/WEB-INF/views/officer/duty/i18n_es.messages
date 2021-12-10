@@ -23,10 +23,10 @@ officer.duty.form.label.workload = Carga de trabajo
 officer.duty.form.label.status = Estado
 officer.duty.form.label.description = Descripcion
 officer.duty.form.label.link = Enlace
-officer.duty.form.button.create = Crear tarea
+officer.duty.form.button.create = Crear labor
 officer.duty.form.button.return = Volver
-officer.duty.form.button.update = Actualizar tarea
-officer.duty.form.button.delete = Borrar tarea
+officer.duty.form.button.update = Actualizar labor
+officer.duty.form.button.delete = Borrar labor
 
 officer.duty.error.spam = Contiene spam
 officer.duty.error.startMoment = El comienzo debe estar en el futuro y debe ser dd/mm/aaaa hh:mm

@@ -8,8 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.officer.officer.form.title.create = Hazte officer
-authenticated.officer.officer.form.title.update = Actualiza tus datos de officer
+authenticated.officer.officer.form.title.create = Hazte directivo
+authenticated.officer.officer.form.title.update = Actualiza tus datos de directivo
 
 authenticated.officer.officer.form.label.compañía = Compañía
 authenticated.officer.officer.form.label.sector = Sector
