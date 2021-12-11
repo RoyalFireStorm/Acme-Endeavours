@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class OfficerTaskListMineTest  extends AcmeEndeavoursTest {
+public class OfficerDutyListMineTest  extends AcmeEndeavoursTest {
 	
 	//Test de la lista de duties de un Officer. Se espera que cada columna tenga el valor asignado en /listTask/positive.csv
 	@ParameterizedTest

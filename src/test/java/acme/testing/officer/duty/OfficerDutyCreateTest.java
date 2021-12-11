@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class OfficerTaskCreateTest  extends AcmeEndeavoursTest  {
+public class OfficerDutyCreateTest  extends AcmeEndeavoursTest  {
 	
 	//Test de la creación de duties de un Officer (positivo). Introducimos valores correctos para cada campo del formulario y creamos la duty.
 	@ParameterizedTest

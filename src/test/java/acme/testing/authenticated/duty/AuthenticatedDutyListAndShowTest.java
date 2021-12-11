@@ -6,7 +6,7 @@ import org.springframework.core.annotation.Order;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class AuthenticatedTaskListAndShowTest extends AcmeEndeavoursTest {
+public class AuthenticatedDutyListAndShowTest extends AcmeEndeavoursTest {
 
 	// Lifecycle management ---------------------------------------------------
 	

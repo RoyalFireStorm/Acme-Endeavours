@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class AnonymousTaskListShowTest extends AcmeEndeavoursTest{
+public class AnonymousDutyListShowTest extends AcmeEndeavoursTest{
 	
 	// Internal state ---------------------------------------------------------
 
