@@ -1392,7 +1392,7 @@
     }
   }
 
-  function microdutyDebounce(fn) {
+  function microtaskDebounce(fn) {
     var called = false;
     return function () {
       if (called) {
@@ -1406,7 +1406,7 @@
     };
   }
 
-  function dutyDebounce(fn) {
+  function taskDebounce(fn) {
     var scheduled = false;
     return function () {
       if (!scheduled) {
@@ -1419,7 +1419,7 @@
     };
   }
 
-  var supportsMicroDutys = isBrowser && window.Promise;
+  var supportsMicroTasks = isBrowser && window.Promise;
 
   /**
 	 * Create a debounced version of a method, that's asynchronously deferred but called in the minimum time possible.
@@ -1429,7 +1429,7 @@
 	 * @argument {Function} fn
 	 * @returns {Function}
 	 */
-  var debounce = supportsMicroDutys ? microdutyDebounce : dutyDebounce;
+  var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
 
   /**
 	 * Check if the given variable is a function
