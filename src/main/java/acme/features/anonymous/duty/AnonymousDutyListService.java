@@ -12,10 +12,10 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousTaskListService implements AbstractListService<Anonymous, Duty>{
+public class AnonymousDutyListService implements AbstractListService<Anonymous, Duty>{
 
 	@Autowired
-	AnonymousTaskRepository repository;
+	AnonymousDutyRepository repository;
 	
 	
 	@Override

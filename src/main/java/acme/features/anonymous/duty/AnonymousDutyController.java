@@ -13,13 +13,13 @@ import acme.framework.entities.Anonymous;
 
 @Controller
 @RequestMapping("/anonymous/duty/")
-public class AnonymousTaskController extends AbstractController<Anonymous, Duty> {
+public class AnonymousDutyController extends AbstractController<Anonymous, Duty> {
 	
 	@Autowired
-	private AnonymousTaskListService listService;
+	private AnonymousDutyListService listService;
 	
 	@Autowired
-	private AnonymousTaskShowService showService;
+	private AnonymousDutyShowService showService;
 	
 	@PostConstruct
 	private void initialise() {

@@ -17,7 +17,7 @@ public class AnonymousDutyListShowTest extends AcmeEndeavoursTest{
 		//Caso positivo: Un usuario anónimo lista las duties y accede a una de ellas sin ningún problema. 
 		@ParameterizedTest
 		@CsvFileSource(resources = "/anonymous/Duty/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-		public void positiveListAndShowTask(final int recordIndex, final String title, final String startMoment, 
+		public void positiveListAndShowDuty(final int recordIndex, final String title, final String startMoment, 
 			final String endMoment, final String workload, final String status, final String description,
 			final String link) {
 			super.navigateHome();
@@ -42,7 +42,7 @@ public class AnonymousDutyListShowTest extends AcmeEndeavoursTest{
 		
 		//Caso negativo: Un usuario administrador intenta acceder a las duties de un usuario anónimo.  
 				@Test
-				public void negativeShowTask() {
+				public void negativeShowDuty() {
 					super.signIn("administrator", "administrator");
 					super.navigate("/anonymous/duty/show", "id=263");
 		            

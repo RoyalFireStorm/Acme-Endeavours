@@ -34,7 +34,7 @@ master.menu.anonymous.favourite-link-jesus = Enlace favorito de Roldan
 master.menu.anonymous.favourite-link-raul = Enlace favorito de Parrado
 master.menu.anonymous.listShout = Listado de Gritos
 master.menu.anonymous.createShout = Gritar!
-master.menu.anonymous.listTask = Listado de Tareas
+master.menu.anonymous.listDuty = Listado de Tareas
 
 # master.menu.administrator ###################################################
 
@@ -59,10 +59,10 @@ master.menu.consumer.favourite-link = Enlace favorito
 # master.menu.officer ##########################################################
 
 master.menu.officer = Directivo
-master.menu.officer.createTask = Crear labor
-master.menu.officer.listTask = Lista de labores
+master.menu.officer.createDuty = Crear labor
+master.menu.officer.listDuty = Lista de labores
 master.menu.officer.favourite-link = Enlace favorito
-master.menu.officer.showTask = Mostrar tarea
+master.menu.officer.showDuty = Mostrar tarea
 
 # master.menu.user-account ####################################################
 
@@ -80,7 +80,7 @@ master.menu.user-account.officer = Datos de directivo
 # master.menu.authenticated ##############################################################
 
 master.menu.authenticated =Autenticado
-master.menu.authenticated.listTask =Lista de labores
+master.menu.authenticated.listDuty =Lista de labores
 
 ﻿# master.footer ###############################################################
 

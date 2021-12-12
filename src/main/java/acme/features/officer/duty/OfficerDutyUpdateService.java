@@ -44,7 +44,7 @@ public class OfficerDutyUpdateService implements AbstractUpdateService<Officer, 
 		int dutyId;
 		
 		dutyId = request.getModel().getInteger("id");
-		final Duty duty = this.repository.findOneTaskById(dutyId);
+		final Duty duty = this.repository.findOneDutyById(dutyId);
 		result = duty.getOfficer().getUserAccount().getId()==request.getPrincipal().getAccountId();
 		
 		return result;
@@ -77,7 +77,7 @@ public class OfficerDutyUpdateService implements AbstractUpdateService<Officer, 
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneTaskById(id);
+		result = this.repository.findOneDutyById(id);
 
 		return result;
 	}

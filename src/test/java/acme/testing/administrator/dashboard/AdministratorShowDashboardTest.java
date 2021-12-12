@@ -24,14 +24,14 @@ public class AdministratorShowDashboardTest extends AcmeEndeavoursTest{
 		
 		super.clickOnMenu("Administrator", "Dashboard");
 		
-		By locatorTask;
-		String stringTask;
-		List<WebElement> elementTask;
-		locatorTask = By.xpath("//td");
-		elementTask = super.locateMany(locatorTask);
-		stringTask = elementTask.get(Integer.parseInt(recordIndex)-1).getText();
+		By locatorDuty;
+		String stringDuty;
+		List<WebElement> elementDuty;
+		locatorDuty = By.xpath("//td");
+		elementDuty = super.locateMany(locatorDuty);
+		stringDuty = elementDuty.get(Integer.parseInt(recordIndex)-1).getText();
 		
-		assert stringTask.equals(number.toString());
+		assert stringDuty.equals(number.toString());
 		super.signOut();
 	}
 	

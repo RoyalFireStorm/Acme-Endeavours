@@ -12,10 +12,10 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedTaskListService implements AbstractListService<Authenticated, Duty>{
+public class AuthenticatedDutyListService implements AbstractListService<Authenticated, Duty>{
 
 	@Autowired
-	AuthenticatedTaskRepository repository;
+	AuthenticatedDutyRepository repository;
 	
 	
 	@Override

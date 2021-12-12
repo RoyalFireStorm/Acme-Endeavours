@@ -12,7 +12,7 @@ public class OfficerDutyDeleteTest extends AcmeEndeavoursTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/officer/Duty/deletePositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveDeleteTask(final int recordIndex,final int id) {
+	public void positiveDeleteDuty(final int recordIndex,final int id) {
 		
 		super.signIn("officer", "officer");
 		
@@ -29,7 +29,7 @@ public class OfficerDutyDeleteTest extends AcmeEndeavoursTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/officer/Duty/deleteNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void negativeDeleteTask(final int recordIndex,final int id) {
+	public void negativeDeleteDuty(final int recordIndex,final int id) {
 		
 		super.signIn("officer", "officer");
 		super.clickOnMenu("Officer", "List duties");

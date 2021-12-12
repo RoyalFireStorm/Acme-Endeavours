@@ -39,8 +39,8 @@ public class OfficerDutyListService implements AbstractListService<Officer, Duty
 		
 		Collection<Duty> result;
 		//final Officer m = this.repository.findOfficerByUsername(request.getPrincipal().getUsername());
-		result = this.repository.findAllTaskByOfficerUsername(request.getPrincipal().getUsername());
-		//result = this.repository.findAllTasks();
+		result = this.repository.findAllDutyByOfficerUsername(request.getPrincipal().getUsername());
+		//result = this.repository.findAllDutys();
 		
 		return result;
 	}

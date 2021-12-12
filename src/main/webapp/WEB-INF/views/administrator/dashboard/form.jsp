@@ -16,7 +16,7 @@
 			<acme:message code="administrator.dashboard.form.label.total-number-duty-public"/>
 		</th>
 		<td>
-			<acme:print value="${totalNumberTaskPublic}"/>
+			<acme:print value="${totalNumberDutyPublic}"/>
 		</td>
 	</tr>
 	<tr>
@@ -24,7 +24,7 @@
 			<acme:message code="administrator.dashboard.form.label.total-number-duty-private"/>
 		</th>
 		<td>
-			<acme:print value="${totalNumberTaskPrivate}"/>
+			<acme:print value="${totalNumberDutyPrivate}"/>
 		</td>
 	</tr>
 	<tr>
@@ -32,7 +32,7 @@
 			<acme:message code="administrator.dashboard.form.label.total-number-duty-finished"/>
 		</th>
 		<td>
-			<acme:print value="${totalNumberTaskFinished}"/>
+			<acme:print value="${totalNumberDutyFinished}"/>
 		</td>
 	</tr>
 	<tr>
@@ -40,7 +40,7 @@
 			<acme:message code="administrator.dashboard.form.label.total-number-duty-no-finished"/>
 		</th>
 		<td>
-			<acme:print value="${totalNumberTaskNoFinished}"/>
+			<acme:print value="${totalNumberDutyNoFinished}"/>
 		</td>
 	</tr>
 </table>
@@ -57,7 +57,7 @@
 			<acme:message code="administrator.dashboard.form.label.average-duty-workload"/>
 		</th>
 		<td>
-			<acme:print value="${averageTaskWorkload}"/>
+			<acme:print value="${averageDutyWorkload}"/>
 		</td>
 	</tr>
 	<tr>
@@ -65,7 +65,7 @@
 			<acme:message code="administrator.dashboard.form.label.deviation-duty-workload"/>
 		</th>
 		<td>
-			<acme:print value="${deviationTaskWorkload}"/>
+			<acme:print value="${deviationDutyWorkload}"/>
 		</td>
 	</tr>
 	<tr>
@@ -73,7 +73,7 @@
 			<acme:message code="administrator.dashboard.form.label.maximum-duty-workload"/>
 		</th>
 		<td>
-			<acme:print value="${maximumTaskWorkload}"/>
+			<acme:print value="${maximumDutyWorkload}"/>
 		</td>
 	</tr>
 	<tr>
@@ -81,7 +81,7 @@
 			<acme:message code="administrator.dashboard.form.label.minimum-duty-workload"/>
 		</th>
 		<td>
-			<acme:print value="${minimumTaskWorkload}"/>
+			<acme:print value="${minimumDutyWorkload}"/>
 		</td>
 	</tr>
 </table>
@@ -98,7 +98,7 @@
 			<acme:message code="administrator.dashboard.form.label.average-duty-execution-period"/>
 		</th>
 		<td>
-			<acme:print value="${averageTaskExtPeriod}"/>
+			<acme:print value="${averageDutyExtPeriod}"/>
 		</td>
 	</tr>
 	<tr>
@@ -106,7 +106,7 @@
 			<acme:message code="administrator.dashboard.form.label.deviation-duty-execution-period"/>
 		</th>
 		<td>
-			<acme:print value="${deviationTaskExtPeriod}"/>
+			<acme:print value="${deviationDutyExtPeriod}"/>
 		</td>
 	</tr>
 	<tr>
@@ -114,7 +114,7 @@
 			<acme:message code="administrator.dashboard.form.label.maximum-duty-execution-period"/>
 		</th>
 		<td>
-			<acme:print value="${maximumTaskExtPeriod}"/>
+			<acme:print value="${maximumDutyExtPeriod}"/>
 		</td>
 	</tr>
 	<tr>
@@ -122,7 +122,7 @@
 			<acme:message code="administrator.dashboard.form.label.minimum-duty-execution-period"/>
 		</th>
 		<td>
-			<acme:print value="${minimumTaskExtPeriod}"/>
+			<acme:print value="${minimumDutyExtPeriod}"/>
 		</td>
 	</tr>
 </table>

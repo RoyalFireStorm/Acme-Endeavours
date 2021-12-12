@@ -13,11 +13,11 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedTaskShowService implements AbstractShowService<Authenticated, Duty>{
+public class AuthenticatedDutyShowService implements AbstractShowService<Authenticated, Duty>{
 	// Internal state ---------------------------------------------------------
 
 		@Autowired
-		protected AuthenticatedTaskRepository repository;
+		protected AuthenticatedDutyRepository repository;
 
 
 		@Override
@@ -26,7 +26,7 @@ public class AuthenticatedTaskShowService implements AbstractShowService<Authent
 			Duty duty;
 	        int dutyId;
 	        dutyId = request.getModel().getInteger("id");
-	        duty = this.repository.findOneTaskById(dutyId);
+	        duty = this.repository.findOneDutyById(dutyId);
 
 	        if(duty.getStatus().equals(DutyStatus.PRIVATE) || duty.getEndMoment().after(Calendar.getInstance().getTime())) return false;
 	        return true;
@@ -52,7 +52,7 @@ public class AuthenticatedTaskShowService implements AbstractShowService<Authent
 			int id;
 
 			id = request.getModel().getInteger("id");
-			result = this.repository.findOneTaskById(id);
+			result = this.repository.findOneDutyById(id);
 
 			return result;
 		}

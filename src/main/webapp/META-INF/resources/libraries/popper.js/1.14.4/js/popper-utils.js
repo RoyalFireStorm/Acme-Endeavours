@@ -664,7 +664,7 @@ function dutyDebounce(fn) {
   };
 }
 
-var supportsMicroTasks = isBrowser && window.Promise;
+var supportsMicroDutys = isBrowser && window.Promise;
 
 /**
  * Create a debounced version of a method, that's asynchronously deferred but called in the minimum time possible.
@@ -674,7 +674,7 @@ var supportsMicroTasks = isBrowser && window.Promise;
  * @argument {Function} fn
  * @returns {Function}
  */
-var debounce = supportsMicroTasks ? microdutyDebounce : dutyDebounce;
+var debounce = supportsMicroDutys ? microdutyDebounce : dutyDebounce;
 
 /**
  * Mimics the `find` method of Array

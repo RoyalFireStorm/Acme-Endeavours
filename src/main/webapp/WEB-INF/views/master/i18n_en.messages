@@ -34,7 +34,7 @@ master.menu.anonymous.favourite-link-jesus = Roldan's Favourite link
 master.menu.anonymous.favourite-link-raul = Parrado's favourite link
 master.menu.anonymous.listShout = List shouts
 master.menu.anonymous.createShout = Shout!
-master.menu.anonymous.listTask = List duties
+master.menu.anonymous.listDuty = List duties
 
 
 # master.menu.administrator ###################################################
@@ -60,10 +60,10 @@ master.menu.consumer.favourite-link = Favourite link
 # master.menu.officer ##########################################################
 
 master.menu.officer = Officer
-master.menu.officer.createTask = Create duty
-master.menu.officer.listTask = List duties
+master.menu.officer.createDuty = Create duty
+master.menu.officer.listDuty = List duties
 master.menu.officer.favourite-link = Favourite link
-master.menu.officer.showTask = Show Duty
+master.menu.officer.showDuty = Show Duty
 
 
 # master.menu.user-account ####################################################
@@ -80,7 +80,7 @@ master.menu.user-account.officer = Officer data
 # master.menu.authenticated ##############################################################
 
 master.menu.authenticated =Authenticated
-master.menu.authenticated.listTask =List Duty
+master.menu.authenticated.listDuty =List Duty
 
 # master.footer ###############################################################
 

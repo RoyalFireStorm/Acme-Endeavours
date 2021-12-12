@@ -332,7 +332,7 @@ Duty
 + workload: Double {NotNull}
 + description: String {NotEmpty, Length(max = 500)}
 + link: String {URL}
-+ status: TaskStatus {NotNull}</panel_attributes>
++ status: DutyStatus {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -372,7 +372,7 @@ has v</panel_attributes>
       <h>48</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
-TaskStatus
+DutyStatus
 --
 + PUBLIC
 +PRIVATE</panel_attributes>

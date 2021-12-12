@@ -12,7 +12,7 @@ public class OfficerDutyCreateTest  extends AcmeEndeavoursTest  {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/officer/Duty/createPositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveCreateTask(final String title, final String startMoment, final String endMoment,final String workload,final String status, final String description,  final String link) {
+	public void positiveCreateDuty(final String title, final String startMoment, final String endMoment,final String workload,final String status, final String description,  final String link) {
 		super.signIn("officer", "officer");
 
 		super.clickOnMenu("Officer", "Create duty");
@@ -35,7 +35,7 @@ public class OfficerDutyCreateTest  extends AcmeEndeavoursTest  {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/officer/Duty/createNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void negativeCreateTask(final String title, final String startMoment, final String endMoment, final String workload, final String status, final String description,final String link) {
+	public void negativeCreateDuty(final String title, final String startMoment, final String endMoment, final String workload, final String status, final String description,final String link) {
 		
 		super.signIn("officer", "officer");
 		super.clickOnMenu("Officer", "Create duty");

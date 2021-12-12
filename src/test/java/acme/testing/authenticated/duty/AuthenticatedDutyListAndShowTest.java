@@ -18,7 +18,7 @@ public class AuthenticatedDutyListAndShowTest extends AcmeEndeavoursTest {
 		@ParameterizedTest
 		@CsvFileSource(resources = "/authenticated/Duty/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 		@Order(10)
-		public void positiveAuthenticatedListAndShowTask(final int recordIndex, final String title, final String startMoment, final String endMoment,final String description ,final String workload,final String status,final String link) {
+		public void positiveAuthenticatedListAndShowDuty(final int recordIndex, final String title, final String startMoment, final String endMoment,final String description ,final String workload,final String status,final String link) {
 			super.navigateHome();
 			
 			super.signIn("administrator", "administrator");
@@ -50,7 +50,7 @@ public class AuthenticatedDutyListAndShowTest extends AcmeEndeavoursTest {
 		@ParameterizedTest
 		@CsvFileSource(resources = "/authenticated/Duty/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 		@Order(10)
-			public void negativeAuthenticatedListandShowTask(final int recordIndex, final String title, final String startMoment, final String endMoment,final String description ,final String workload,final String status,final String link, final String id) {
+			public void negativeAuthenticatedListandShowDuty(final int recordIndex, final String title, final String startMoment, final String endMoment,final String description ,final String workload,final String status,final String link, final String id) {
 				super.signIn("administrator", "administrator");
 				super.signOut();
 				final String path="/authenticated/duty/list";

@@ -20,7 +20,7 @@ public class OfficerDutyDeleteService implements AbstractDeleteService<Officer, 
 	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
 		final int dutyId=request.getModel().getInteger("id");
-		final Officer officer=this.repository.findOneTaskById(dutyId).getOfficer();
+		final Officer officer=this.repository.findOneDutyById(dutyId).getOfficer();
 		return request.getPrincipal().getAccountId()==officer.getUserAccount().getId() ;
 	}
 
@@ -51,7 +51,7 @@ public class OfficerDutyDeleteService implements AbstractDeleteService<Officer, 
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneTaskById(id);
+		result = this.repository.findOneDutyById(id);
 
 		return result;
 	}

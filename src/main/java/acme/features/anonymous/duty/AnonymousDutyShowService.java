@@ -13,12 +13,12 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousTaskShowService implements AbstractShowService<Anonymous, Duty> {
+public class AnonymousDutyShowService implements AbstractShowService<Anonymous, Duty> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AnonymousTaskRepository repository;
+	protected AnonymousDutyRepository repository;
 
 
 	@Override
@@ -28,7 +28,7 @@ public class AnonymousTaskShowService implements AbstractShowService<Anonymous, 
 		Duty duty;
         int dutyId;
         dutyId = request.getModel().getInteger("id");
-        duty = this.repository.findOneTaskById(dutyId);
+        duty = this.repository.findOneDutyById(dutyId);
 
         if(duty.getStatus().equals(DutyStatus.PRIVATE) || duty.getEndMoment().before(Calendar.getInstance().getTime())) return false;
         return true;
@@ -54,7 +54,7 @@ public class AnonymousTaskShowService implements AbstractShowService<Anonymous, 
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneTaskById(id);
+		result = this.repository.findOneDutyById(id);
 
 		return result;
 	}

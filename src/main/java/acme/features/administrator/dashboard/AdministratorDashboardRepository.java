@@ -12,40 +12,40 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	
 	//Total number of public/private duties
 	@Query("select count(t) from Duty t where t.status= ?1")
-	Integer totalNumberTaskbyStatus(DutyStatus dutyStatus);
+	Integer totalNumberDutybyStatus(DutyStatus dutyStatus);
 	
 	//Total number of finished/non-finished duties
 	@Query("select count(t) from Duty t where t.endMoment<current_timestamp()")
-	Integer totalNumberTaskFinished();
+	Integer totalNumberDutyFinished();
 	
 	@Query("select count(t) from Duty t where t.endMoment>=current_timestamp()")
-	Integer totalNumberTaskNoFinished();
+	Integer totalNumberDutyNoFinished();
 		
 	
 	//Average, deviation, minimum, and maximum duty workloads
 	@Query("select avg(t.workload) from Duty t")
-	Double averageTaskWorkload();
+	Double averageDutyWorkload();
 	
 	@Query("select stddev(t.workload) from Duty t")
-	Double deviationTaskWorkload();
+	Double deviationDutyWorkload();
 	
 	@Query("select max(t.workload) from Duty t")
-	Double maximumTaskWorkload();
+	Double maximumDutyWorkload();
 	
 	@Query("select min(t.workload) from Duty t")
-	Double minimumTaskWorkload();
+	Double minimumDutyWorkload();
 	
 	//Average, deviation, minimum, and maximum duty execution period
 	@Query("select avg(DATEDIFF(t.endMoment, t.startMoment)) from Duty t")
-	Double averageTaskExtPeriod();
+	Double averageDutyExtPeriod();
 	
 	@Query("select stddev(DATEDIFF(t.endMoment, t.startMoment)) from Duty t")
-	Double deviationTaskExtPeriod();
+	Double deviationDutyExtPeriod();
 	
 	@Query("select max(DATEDIFF(t.endMoment, t.startMoment)) from Duty t")
-	Double maximumTaskExtPeriod();
+	Double maximumDutyExtPeriod();
 	
 	@Query("select min(DATEDIFF(t.endMoment, t.startMoment)) from Duty t")
-	Double minimumTaskExtPeriod();
+	Double minimumDutyExtPeriod();
 	
 }

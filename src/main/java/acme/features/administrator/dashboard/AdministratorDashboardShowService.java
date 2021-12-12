@@ -30,11 +30,11 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, //
-		"totalNumberTaskPublic","totalNumberTaskPrivate","totalNumberTaskFinished",
-		"totalNumberTaskNoFinished","averageTaskWorkload",
-		"deviationTaskWorkload","maximumTaskWorkload","minimumTaskWorkload",
-		"averageTaskExtPeriod","deviationTaskExtPeriod","maximumTaskExtPeriod",
-		"minimumTaskExtPeriod");
+		"totalNumberDutyPublic","totalNumberDutyPrivate","totalNumberDutyFinished",
+		"totalNumberDutyNoFinished","averageDutyWorkload",
+		"deviationDutyWorkload","maximumDutyWorkload","minimumDutyWorkload",
+		"averageDutyExtPeriod","deviationDutyExtPeriod","maximumDutyExtPeriod",
+		"minimumDutyExtPeriod");
 	}
 
 	@Override
@@ -42,48 +42,48 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert request != null;
 
 		Dashboard result;
-		final Integer totalNumberTaskPublic;
-		final Integer totalNumberTaskPrivate;
-		final Integer totalNumberTaskFinished;
-		final Integer totalNumberTaskNoFinished;
-		final Double averageTaskWorkload;
-		final Double deviationTaskWorkload;
-		final Double maximumTaskWorkload;
-		final Double minimumTaskWorkload;
-		final Double averageTaskExtPeriod;
-		final Double deviationTaskExtPeriod;
-		final Double maximumTaskExtPeriod;
-		final Double minimumTaskExtPeriod;
+		final Integer totalNumberDutyPublic;
+		final Integer totalNumberDutyPrivate;
+		final Integer totalNumberDutyFinished;
+		final Integer totalNumberDutyNoFinished;
+		final Double averageDutyWorkload;
+		final Double deviationDutyWorkload;
+		final Double maximumDutyWorkload;
+		final Double minimumDutyWorkload;
+		final Double averageDutyExtPeriod;
+		final Double deviationDutyExtPeriod;
+		final Double maximumDutyExtPeriod;
+		final Double minimumDutyExtPeriod;
 
-		totalNumberTaskPublic = this.repository.totalNumberTaskbyStatus(DutyStatus.PUBLIC);
-		totalNumberTaskPrivate = this.repository.totalNumberTaskbyStatus(DutyStatus.PRIVATE);
+		totalNumberDutyPublic = this.repository.totalNumberDutybyStatus(DutyStatus.PUBLIC);
+		totalNumberDutyPrivate = this.repository.totalNumberDutybyStatus(DutyStatus.PRIVATE);
 		
-		totalNumberTaskFinished = this.repository.totalNumberTaskFinished();
-		totalNumberTaskNoFinished= this.repository.totalNumberTaskNoFinished();
+		totalNumberDutyFinished = this.repository.totalNumberDutyFinished();
+		totalNumberDutyNoFinished= this.repository.totalNumberDutyNoFinished();
 		
-		averageTaskWorkload = this.repository.averageTaskWorkload();
-		deviationTaskWorkload = this.repository.deviationTaskWorkload();
-		maximumTaskWorkload = this.repository.maximumTaskWorkload();
-		minimumTaskWorkload= this.repository.minimumTaskWorkload();
+		averageDutyWorkload = this.repository.averageDutyWorkload();
+		deviationDutyWorkload = this.repository.deviationDutyWorkload();
+		maximumDutyWorkload = this.repository.maximumDutyWorkload();
+		minimumDutyWorkload= this.repository.minimumDutyWorkload();
 		
-		averageTaskExtPeriod = this.repository.averageTaskExtPeriod();
-		deviationTaskExtPeriod = this.repository.deviationTaskExtPeriod();
-		maximumTaskExtPeriod = this.repository.maximumTaskExtPeriod();
-		minimumTaskExtPeriod= this.repository.minimumTaskExtPeriod();
+		averageDutyExtPeriod = this.repository.averageDutyExtPeriod();
+		deviationDutyExtPeriod = this.repository.deviationDutyExtPeriod();
+		maximumDutyExtPeriod = this.repository.maximumDutyExtPeriod();
+		minimumDutyExtPeriod= this.repository.minimumDutyExtPeriod();
 		
 		result = new Dashboard();
-		result.setTotalNumberTaskPublic(totalNumberTaskPublic);
-		result.setTotalNumberTaskPrivate(totalNumberTaskPrivate);
-		result.setTotalNumberTaskFinished(totalNumberTaskFinished);
-		result.setTotalNumberTaskNoFinished(totalNumberTaskNoFinished);
-		result.setAverageTaskWorkload(averageTaskWorkload);
-		result.setDeviationTaskWorkload(deviationTaskWorkload);
-		result.setMaximumTaskWorkload(maximumTaskWorkload);
-		result.setMinimumTaskWorkload(minimumTaskWorkload);
-		result.setAverageTaskExtPeriod(averageTaskExtPeriod);
-		result.setDeviationTaskExtPeriod(deviationTaskExtPeriod);
-		result.setMaximumTaskExtPeriod(maximumTaskExtPeriod);
-		result.setMinimumTaskExtPeriod(minimumTaskExtPeriod);
+		result.setTotalNumberDutyPublic(totalNumberDutyPublic);
+		result.setTotalNumberDutyPrivate(totalNumberDutyPrivate);
+		result.setTotalNumberDutyFinished(totalNumberDutyFinished);
+		result.setTotalNumberDutyNoFinished(totalNumberDutyNoFinished);
+		result.setAverageDutyWorkload(averageDutyWorkload);
+		result.setDeviationDutyWorkload(deviationDutyWorkload);
+		result.setMaximumDutyWorkload(maximumDutyWorkload);
+		result.setMinimumDutyWorkload(minimumDutyWorkload);
+		result.setAverageDutyExtPeriod(averageDutyExtPeriod);
+		result.setDeviationDutyExtPeriod(deviationDutyExtPeriod);
+		result.setMaximumDutyExtPeriod(maximumDutyExtPeriod);
+		result.setMinimumDutyExtPeriod(minimumDutyExtPeriod);
 		
 
 		return result;

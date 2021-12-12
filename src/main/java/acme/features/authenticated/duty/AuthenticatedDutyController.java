@@ -13,13 +13,13 @@ import acme.framework.entities.Authenticated;
 
 @Controller
 @RequestMapping("/authenticated/duty/")
-public class AuthenticatedTaskController extends AbstractController<Authenticated, Duty> {
+public class AuthenticatedDutyController extends AbstractController<Authenticated, Duty> {
 	
 	@Autowired
-	private AuthenticatedTaskListService listService;
+	private AuthenticatedDutyListService listService;
 	
 	@Autowired
-	private AuthenticatedTaskShowService showService;
+	private AuthenticatedDutyShowService showService;
 	
 	@PostConstruct
 	private void initialise() {
