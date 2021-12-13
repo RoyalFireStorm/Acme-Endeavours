@@ -15,5 +15,5 @@ projects.
 
 Enlace al repositorio de GitHub: https://github.com/RoyalFireStorm/Acme-Endeavours
 
-Enlace a la release: https://github.com/RoyalFireStorm/Acme-Endeavours/releases/tag/1.6
+Enlace a la release: https://github.com/RoyalFireStorm/Acme-Endeavours/releases/tag/1.7
 
