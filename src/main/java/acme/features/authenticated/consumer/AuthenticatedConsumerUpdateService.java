@@ -57,10 +57,6 @@ public class AuthenticatedConsumerUpdateService implements AbstractUpdateService
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		final boolean spam1 = !this.spamService.filtroSpam(entity.getCompany(),this.thresholdRepository.findThreshold().getNumber());
-		errors.state(request, spam1, "company","authenticated.consumer.consumer.error.spam");
-		final boolean spam2 = !this.spamService.filtroSpam(entity.getSector(),this.thresholdRepository.findThreshold().getNumber());
-		errors.state(request, spam2, "sector","authenticated.consumer.consumer.error.spam");
 	}
 
 	@Override

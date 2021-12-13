@@ -91,10 +91,6 @@ public class AuthenticatedProviderUpdateService implements AbstractUpdateService
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		final boolean spam1 = !this.spamService.filtroSpam(entity.getCompany(),this.thresholdRepository.findThreshold().getNumber());
-		errors.state(request, spam1, "company","authenticated.provider.error.spam");
-		final boolean spam2 = !this.spamService.filtroSpam(entity.getSector(),this.thresholdRepository.findThreshold().getNumber());
-		errors.state(request, spam2, "sector","authenticated.provider.error.spam");
 	}
 
 	@Override
